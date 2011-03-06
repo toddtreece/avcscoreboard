@@ -541,3 +541,211 @@ Started GET "/teams" for 127.0.0.1 at 2011-03-04 13:08:48 -0700
   [1m[36mTeam Load (0.9ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
 Rendered teams/index.html.erb within layouts/application (56.8ms)
 Completed 200 OK in 192ms (Views: 64.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2011-03-04 13:22:53 -0700
+  Processing by TeamsController#index as HTML
+  [1m[36mTeam Load (0.8ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Rendered teams/index.html.erb within layouts/application (56.2ms)
+Completed 200 OK in 189ms (Views: 64.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/teams/2" for 127.0.0.1 at 2011-03-04 13:22:59 -0700
+  Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mTeam Load (0.3ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."id" = 2 LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "team_members" WHERE ("team_members".team_id = 2)
+  [1m[36mTeamMember Load (0.2ms)[0m  [1mSELECT "team_members".* FROM "team_members" WHERE ("team_members".team_id = 2)[0m
+Rendered teams/show.html.erb within layouts/application (75.2ms)
+Completed 200 OK in 134ms (Views: 81.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2011-03-04 13:23:04 -0700
+  Processing by TeamsController#index as HTML
+  [1m[35mTeam Load (0.7ms)[0m  SELECT "teams".* FROM "teams"
+Rendered teams/index.html.erb within layouts/application (56.0ms)
+Completed 200 OK in 77ms (Views: 62.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/teams/new" for 127.0.0.1 at 2011-03-04 13:23:06 -0700
+  Processing by TeamsController#new as HTML
+Rendered teams/_form.html.erb (21.0ms)
+Rendered teams/new.html.erb within layouts/application (26.7ms)
+Completed 200 OK in 51ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/teams" for 127.0.0.1 at 2011-03-04 13:23:25 -0700
+  Processing by TeamsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2Yxj33xh0Ja6MVrZMy4NiieiOsiHUdaX5hpNWZC4NVw=", "team"=>{"name"=>"Team Blah", "city"=>"Boulder", "state"=>"Co", "country"=>"USA"}, "commit"=>"Create Team"}
+  [1m[36mAREL (0.8ms)[0m  [1mINSERT INTO "teams" ("name", "city", "state", "country", "created_at", "updated_at") VALUES ('Team Blah', 'Boulder', 'Co', 'USA', '2011-03-04 20:23:25.380447', '2011-03-04 20:23:25.380447')[0m
+Redirected to http://localhost:3000/teams/3
+Completed 302 Found in 82ms
+
+
+Started GET "/teams/3" for 127.0.0.1 at 2011-03-04 13:23:25 -0700
+  Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mTeam Load (0.3ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."id" = 3 LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM "team_members" WHERE ("team_members".team_id = 3)[0m
+Rendered teams/show.html.erb within layouts/application (44.0ms)
+Completed 200 OK in 71ms (Views: 50.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/teams" for 127.0.0.1 at 2011-03-04 13:23:29 -0700
+  Processing by TeamsController#index as HTML
+  [1m[35mTeam Load (0.6ms)[0m  SELECT "teams".* FROM "teams"
+Rendered teams/index.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 41ms (Views: 27.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/teams/3" for 127.0.0.1 at 2011-03-04 13:23:34 -0700
+  Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTeam Load (0.3ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."id" = 3 LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM "team_members" WHERE ("team_members".team_id = 3)
+Rendered teams/show.html.erb within layouts/application (77.6ms)
+Completed 200 OK in 102ms (Views: 83.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/teams.json" for 127.0.0.1 at 2011-03-04 13:25:39 -0700
+  Processing by TeamsController#index as JSON
+  [1m[36mTeam Load (0.7ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 39ms (Views: 24.0ms | ActiveRecord: 0.7ms)
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateTeams (20110304173129)
+Migrating to CreateTeamMembers (20110304174840)
+Migrating to AddBotIdToTeams (20110305223208)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (1.3ms)[0m  [1mALTER TABLE "teams" ADD "bots_id" integer[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20110305223208')
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("team_members")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("teams")[0m
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateTeams (20110304173129)
+Migrating to CreateTeamMembers (20110304174840)
+Migrating to AddBotIdToTeams (20110305223208)
+Migrating to CreateBots (20110305223918)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.7ms)[0m  [1mCREATE TABLE "bots" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "bot_types_id" integer, "teams_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20110305223918')
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("bots")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("team_members")[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("teams")
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateBots (20110305223918)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (4.1ms)[0m  [1mDROP TABLE "bots"[0m
+  [1m[35mAREL (0.2ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20110305223918'
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("team_members")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("teams")[0m
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to AddBotIdToTeams (20110305223208)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (1.2ms)[0m  [1mCREATE TEMPORARY TABLE "altered_teams" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "city" varchar(255), "state" varchar(255), "country" varchar(255), "created_at" datetime, "updated_at" datetime, "bots_id" integer) [0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("teams")
+  [1m[36mSQL (0.9ms)[0m  [1mDROP TABLE "teams"[0m
+  [1m[35mSQL (0.3ms)[0m  CREATE TABLE "teams" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "city" varchar(255), "state" varchar(255), "country" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("altered_teams")[0m
+  [1m[35mSQL (0.6ms)[0m  DROP TABLE "altered_teams"
+  [1m[36mAREL (0.2ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20110305223208'[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("team_members")[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("teams")
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateTeams (20110304173129)
+Migrating to CreateTeamMembers (20110304174840)
+Migrating to CreateBots (20110305223918)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.7ms)[0m  [1mCREATE TABLE "bots" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "bot_types_id" integer, "teams_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20110305223918')
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("bots")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("team_members")[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("teams")

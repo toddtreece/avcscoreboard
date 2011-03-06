@@ -1,0 +1,21 @@
+<%= form_for(@heat) do |f| %>
+  <% if @heat.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@heat.errors.count, "error") %> prohibited this heat from being saved:</h2>
+
+      <ul>
+      <% @heat.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :bot_types_id %><br />
+    <%= f.text_field :bot_types_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

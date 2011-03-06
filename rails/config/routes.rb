@@ -1,4 +1,12 @@
 Scoreboard::Application.routes.draw do
+  resources :laps
+
+  resources :heats
+
+  resources :bot_types
+
+  resources :bots
+
   resources :team_members
 
   resources :teams
