@@ -1,83 +1,55 @@
 class BotsController < ApplicationController
-  # GET /bots
-  # GET /bots.xml
+  # GET /bots.json
   def index
     @bots = Bot.all
 
     respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @bots }
+      format.json  { render :json => { :success => true, :data => @bots } }
     end
   end
 
-  # GET /bots/1
-  # GET /bots/1.xml
+  # GET /bots/1.json
   def show
     @bot = Bot.find(params[:id])
 
     respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @bot }
+      format.json  { render :json => { :success => true, :data => @bot } }
     end
   end
 
-  # GET /bots/new
-  # GET /bots/new.xml
-  def new
-    @bot = Bot.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @bot }
-    end
-  end
-
-  # GET /bots/1/edit
-  def edit
-    @bot = Bot.find(params[:id])
-  end
-
-  # POST /bots
-  # POST /bots.xml
+  # POST /bots.json
   def create
     @bot = Bot.new(params[:bot])
 
     respond_to do |format|
       if @bot.save
-        format.html { redirect_to(@bot, :notice => 'Bot was successfully created.') }
-        format.xml  { render :xml => @bot, :status => :created, :location => @bot }
+        format.json { render :json => { :success => true, :data => @bot, :message => 'Created' } }
       else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @bot.errors, :status => :unprocessable_entity }
+        format.json { render :json => { :success => false, :message => 'Creation Failed' } }
       end
     end
   end
 
-  # PUT /bots/1
-  # PUT /bots/1.xml
+  # PUT /bots/1.json
   def update
     @bot = Bot.find(params[:id])
 
     respond_to do |format|
       if @bot.update_attributes(params[:bot])
-        format.html { redirect_to(@bot, :notice => 'Bot was successfully updated.') }
-        format.xml  { head :ok }
+        format.json { render :json => { :success => true, :message => 'Updated' } }
       else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @bot.errors, :status => :unprocessable_entity }
+        format.json { render :json => { :success => false, :message => 'Update Failed' } }
       end
     end
   end
 
-  # DELETE /bots/1
-  # DELETE /bots/1.xml
+  # DELETE /bots/1.json
   def destroy
     @bot = Bot.find(params[:id])
     @bot.destroy
 
     respond_to do |format|
-      format.html { redirect_to(bots_url) }
-      format.xml  { head :ok }
+      format.json { render :json => { :success => true, :message => 'Deleted' } }
     end
   end
 end
