@@ -749,3 +749,42 @@ Migrating to CreateBots (20110305223918)
   [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("bots")
   [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("team_members")[0m
   [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("teams")
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateTeams (20110304173129)
+Migrating to CreateTeamMembers (20110304174840)
+Migrating to CreateBots (20110305223918)
+Migrating to CreateBotTypes (20110306043022)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.7ms)[0m  [1mCREATE TABLE "bot_types" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20110306043022')
+Migrating to CreateHeats (20110306052458)
+  [1m[36mSQL (0.6ms)[0m  [1mCREATE TABLE "heats" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "bot_types_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20110306052458')
+Migrating to CreateLaps (20110306160802)
+  [1m[36mSQL (0.6ms)[0m  [1mCREATE TABLE "laps" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "bots_id" integer, "lap_time" time, "corners_completed" integer, "disqualified" boolean, "heats_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20110306160802')
+Migrating to AddStarttimeToHeats (20110307161235)
+  [1m[36mSQL (0.6ms)[0m  [1mALTER TABLE "heats" ADD "starttime" datetime[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20110307161235')
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("bot_types")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("bots")[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("heats")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("laps")[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("team_members")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("teams")[0m

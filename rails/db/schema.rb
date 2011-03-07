@@ -10,12 +10,35 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110305223918) do
+ActiveRecord::Schema.define(:version => 20110307161235) do
+
+  create_table "bot_types", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "bots", :force => true do |t|
     t.string   "name"
     t.integer  "bot_types_id"
     t.integer  "teams_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "heats", :force => true do |t|
+    t.integer  "bot_types_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.datetime "starttime"
+  end
+
+  create_table "laps", :force => true do |t|
+    t.integer  "bots_id"
+    t.time     "lap_time"
+    t.integer  "corners_completed"
+    t.boolean  "disqualified"
+    t.integer  "heats_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
