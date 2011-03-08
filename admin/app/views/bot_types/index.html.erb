@@ -1,0 +1,23 @@
+<h1>Listing bot_types</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @bot_types.each do |bot_type| %>
+  <tr>
+    <td><%= bot_type.name %></td>
+    <td><%= link_to 'Show', bot_type %></td>
+    <td><%= link_to 'Edit', edit_bot_type_path(bot_type) %></td>
+    <td><%= link_to 'Destroy', bot_type, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Bot type', new_bot_type_path %>

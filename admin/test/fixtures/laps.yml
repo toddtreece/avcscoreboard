@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  bots_id: 1
+  lap_time: 2011-03-06 09:08:02
+  corners_completed: 1
+  disqualified: false
+  heats_id: 1
+
+two:
+  bots_id: 1
+  lap_time: 2011-03-06 09:08:02
+  corners_completed: 1
+  disqualified: false
+  heats_id: 1
