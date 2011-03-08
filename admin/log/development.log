@@ -1059,3 +1059,10 @@ Started GET "/teams.json?_dc=1299545942444&limit=25" for 127.0.0.1 at 2011-03-07
   Parameters: {"_dc"=>"1299545942444", "limit"=>"25"}
   [1m[36mTeam Load (0.8ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
 Completed 200 OK in 66ms (Views: 49.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/teams.json?_dc=1299556098006&limit=25" for 127.0.0.1 at 2011-03-07 20:48:18 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299556098006", "limit"=>"25"}
+  [1m[36mTeam Load (1.7ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 208ms (Views: 60.4ms | ActiveRecord: 1.7ms)
