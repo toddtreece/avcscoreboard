@@ -1038,3 +1038,24 @@ Started GET "/teams.json?_dc=1299542555941&limit=25" for 127.0.0.1 at 2011-03-07
   Parameters: {"_dc"=>"1299542555941", "limit"=>"25"}
   [1m[35mTeam Load (1.2ms)[0m  SELECT "teams".* FROM "teams"
 Completed 200 OK in 39ms (Views: 21.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/teams.json?_dc=1299545936278&limit=25" for 127.0.0.1 at 2011-03-07 17:58:56 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299545936278", "limit"=>"25"}
+  [1m[36mTeam Load (1.0ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 209ms (Views: 63.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/teams.json?_dc=1299545938593&limit=25" for 127.0.0.1 at 2011-03-07 17:58:58 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299545938593", "limit"=>"25"}
+  [1m[35mTeam Load (0.8ms)[0m  SELECT "teams".* FROM "teams"
+Completed 200 OK in 65ms (Views: 48.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/teams.json?_dc=1299545942444&limit=25" for 127.0.0.1 at 2011-03-07 17:59:02 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299545942444", "limit"=>"25"}
+  [1m[36mTeam Load (0.8ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 66ms (Views: 49.4ms | ActiveRecord: 0.8ms)
