@@ -1,1 +1,2 @@
-rails/logs/**/*
+admin/logs/**/*
+*.swp
