@@ -1066,3 +1066,1485 @@ Started GET "/teams.json?_dc=1299556098006&limit=25" for 127.0.0.1 at 2011-03-07
   Parameters: {"_dc"=>"1299556098006", "limit"=>"25"}
   [1m[36mTeam Load (1.7ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
 Completed 200 OK in 208ms (Views: 60.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/teams.json?_dc=1299602282045&limit=25" for 127.0.0.1 at 2011-03-08 09:38:02 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299602282045", "limit"=>"25"}
+  [1m[36mTeam Load (1.5ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 285ms (Views: 36.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/teams.json?_dc=1299602282959&limit=25" for 127.0.0.1 at 2011-03-08 09:38:02 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299602282959", "limit"=>"25"}
+  [1m[35mTeam Load (0.8ms)[0m  SELECT "teams".* FROM "teams"
+Completed 200 OK in 32ms (Views: 16.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/teams.json?_dc=1299602288939&limit=25" for 127.0.0.1 at 2011-03-08 09:38:08 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299602288939", "limit"=>"25"}
+  [1m[36mTeam Load (0.8ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 33ms (Views: 17.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/teams.json?_dc=1299602304881&limit=25" for 127.0.0.1 at 2011-03-08 09:38:24 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299602304881", "limit"=>"25"}
+  [1m[35mTeam Load (0.8ms)[0m  SELECT "teams".* FROM "teams"
+Completed 200 OK in 32ms (Views: 16.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/teams.json?_dc=1299602374149&limit=25" for 127.0.0.1 at 2011-03-08 09:39:34 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299602374149", "limit"=>"25"}
+  [1m[36mTeam Load (0.8ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 31ms (Views: 16.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/teams.json?_dc=1299602438317&limit=25" for 127.0.0.1 at 2011-03-08 09:40:38 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299602438317", "limit"=>"25"}
+  [1m[35mTeam Load (0.8ms)[0m  SELECT "teams".* FROM "teams"
+Completed 200 OK in 31ms (Views: 15.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/teams.json?_dc=1299602488648&limit=25" for 127.0.0.1 at 2011-03-08 09:41:28 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299602488648", "limit"=>"25"}
+  [1m[36mTeam Load (1.0ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 34ms (Views: 16.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/teams.json?_dc=1299602665161&limit=25" for 127.0.0.1 at 2011-03-08 09:44:25 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299602665161", "limit"=>"25"}
+  [1m[35mTeam Load (0.8ms)[0m  SELECT "teams".* FROM "teams"
+Completed 200 OK in 36ms (Views: 16.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/teams.json?_dc=1299603124168&limit=25" for 127.0.0.1 at 2011-03-08 09:52:04 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299603124168", "limit"=>"25"}
+  [1m[36mTeam Load (0.8ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 32ms (Views: 15.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/new/css/prettify_sa.css" for 127.0.0.1 at 2011-03-08 09:57:49 -0700
+
+ActionController::RoutingError (No route matches "/new/css/prettify_sa.css"):
+  
+
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/teams.json?_dc=1299603751795&limit=25" for 127.0.0.1 at 2011-03-08 10:02:31 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299603751795", "limit"=>"25"}
+  [1m[35mTeam Load (0.8ms)[0m  SELECT "teams".* FROM "teams"
+Completed 200 OK in 62ms (Views: 16.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/teams.json?_dc=1299604016109&limit=25" for 127.0.0.1 at 2011-03-08 10:06:56 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299604016109", "limit"=>"25"}
+  [1m[36mTeam Load (0.8ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 32ms (Views: 16.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/teams.json?_dc=1299604199848&limit=25" for 127.0.0.1 at 2011-03-08 10:09:59 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299604199848", "limit"=>"25"}
+  [1m[35mTeam Load (0.8ms)[0m  SELECT "teams".* FROM "teams"
+Completed 200 OK in 32ms (Views: 15.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/teams.json?_dc=1299604252513&limit=25" for 127.0.0.1 at 2011-03-08 10:10:52 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299604252513", "limit"=>"25"}
+  [1m[36mTeam Load (0.8ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 70ms (Views: 54.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/team_members.json?_dc=1299604252515&limit=25" for 127.0.0.1 at 2011-03-08 10:10:52 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299604252515", "limit"=>"25"}
+  [1m[35mTeamMember Load (1.1ms)[0m  SELECT "team_members".* FROM "team_members"
+Completed 200 OK in 39ms (Views: 15.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/teams.json?_dc=1299604282053&limit=25" for 127.0.0.1 at 2011-03-08 10:11:22 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299604282053", "limit"=>"25"}
+  [1m[36mTeam Load (0.8ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 54ms (Views: 16.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/team_members.json?_dc=1299604282064&limit=25" for 127.0.0.1 at 2011-03-08 10:11:22 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299604282064", "limit"=>"25"}
+  [1m[35mTeamMember Load (0.8ms)[0m  SELECT "team_members".* FROM "team_members"
+Completed 200 OK in 67ms (Views: 53.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/teams.json?_dc=1299604834661&limit=25" for 127.0.0.1 at 2011-03-08 10:20:34 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299604834661", "limit"=>"25"}
+  [1m[36mTeam Load (4.6ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 88ms (Views: 62.2ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/team_members.json?_dc=1299604834666&limit=25" for 127.0.0.1 at 2011-03-08 10:20:34 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299604834666", "limit"=>"25"}
+  [1m[35mTeamMember Load (0.7ms)[0m  SELECT "team_members".* FROM "team_members"
+Completed 200 OK in 36ms (Views: 20.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/teams.json?_dc=1299604836706&limit=25" for 127.0.0.1 at 2011-03-08 10:20:36 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299604836706", "limit"=>"25"}
+  [1m[36mTeam Load (3.1ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 66ms (Views: 17.0ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/team_members.json?_dc=1299604836712&limit=25" for 127.0.0.1 at 2011-03-08 10:20:36 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299604836712", "limit"=>"25"}
+  [1m[35mTeamMember Load (0.7ms)[0m  SELECT "team_members".* FROM "team_members"
+Completed 200 OK in 35ms (Views: 20.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/teams.json?_dc=1299604999626&limit=25" for 127.0.0.1 at 2011-03-08 10:23:19 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299604999626", "limit"=>"25"}
+  [1m[36mTeam Load (0.8ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 60ms (Views: 39.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/team_members.json?_dc=1299604999640&limit=25" for 127.0.0.1 at 2011-03-08 10:23:19 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299604999640", "limit"=>"25"}
+  [1m[35mTeamMember Load (0.8ms)[0m  SELECT "team_members".* FROM "team_members"
+Completed 200 OK in 44ms (Views: 18.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/teams.json?_dc=1299605039398&limit=25" for 127.0.0.1 at 2011-03-08 10:23:59 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299605039398", "limit"=>"25"}
+  [1m[36mTeam Load (1.6ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 64ms (Views: 16.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/team_members.json?_dc=1299605039415&limit=25" for 127.0.0.1 at 2011-03-08 10:23:59 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299605039415", "limit"=>"25"}
+  [1m[35mTeamMember Load (0.8ms)[0m  SELECT "team_members".* FROM "team_members"
+Completed 200 OK in 75ms (Views: 56.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/team_members.json?_dc=1299605065986&limit=25" for 127.0.0.1 at 2011-03-08 10:24:26 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299605065986", "limit"=>"25"}
+  [1m[36mTeamMember Load (0.7ms)[0m  [1mSELECT "team_members".* FROM "team_members"[0m
+Completed 200 OK in 32ms (Views: 18.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/teams.json?_dc=1299605065981&limit=25" for 127.0.0.1 at 2011-03-08 10:24:26 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299605065981", "limit"=>"25"}
+  [1m[35mTeam Load (0.8ms)[0m  SELECT "teams".* FROM "teams"
+Completed 200 OK in 35ms (Views: 18.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/teams.json?_dc=1299605429445&limit=25" for 127.0.0.1 at 2011-03-08 10:30:29 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299605429445", "limit"=>"25"}
+  [1m[36mTeam Load (0.8ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 32ms (Views: 16.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/team_members.json?_dc=1299605429448&limit=25" for 127.0.0.1 at 2011-03-08 10:30:29 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299605429448", "limit"=>"25"}
+  [1m[35mTeamMember Load (0.7ms)[0m  SELECT "team_members".* FROM "team_members"
+Completed 200 OK in 31ms (Views: 14.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/teams.json?_dc=1299605460370&limit=25" for 127.0.0.1 at 2011-03-08 10:31:00 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299605460370", "limit"=>"25"}
+  [1m[36mTeam Load (0.8ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 68ms (Views: 51.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/team_members.json?_dc=1299605460372&limit=25" for 127.0.0.1 at 2011-03-08 10:31:00 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299605460372", "limit"=>"25"}
+  [1m[35mTeamMember Load (0.7ms)[0m  SELECT "team_members".* FROM "team_members"
+Completed 200 OK in 29ms (Views: 14.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/teams.json?_dc=1299605699994&limit=25" for 127.0.0.1 at 2011-03-08 10:35:00 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299605699994", "limit"=>"25"}
+  [1m[36mTeam Load (2.8ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 53ms (Views: 21.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/team_members.json?_dc=1299605699999&limit=25" for 127.0.0.1 at 2011-03-08 10:35:00 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299605699999", "limit"=>"25"}
+  [1m[35mTeamMember Load (0.8ms)[0m  SELECT "team_members".* FROM "team_members"
+Completed 200 OK in 46ms (Views: 29.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/teams.json?_dc=1299614449399&limit=25" for 127.0.0.1 at 2011-03-08 13:00:49 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299614449399", "limit"=>"25"}
+  [1m[36mTeam Load (0.9ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 192ms (Views: 23.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/teams.json?_dc=1299614452345&limit=25" for 127.0.0.1 at 2011-03-08 13:00:52 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299614452345", "limit"=>"25"}
+  [1m[35mTeam Load (0.7ms)[0m  SELECT "teams".* FROM "teams"
+Completed 200 OK in 32ms (Views: 16.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/team_members.json?_dc=1299614550157&limit=25" for 127.0.0.1 at 2011-03-08 13:02:30 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299614550157", "limit"=>"25"}
+  [1m[36mTeamMember Load (0.7ms)[0m  [1mSELECT "team_members".* FROM "team_members"[0m
+Completed 200 OK in 47ms (Views: 15.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/teams.json?_dc=1299614550156&limit=25" for 127.0.0.1 at 2011-03-08 13:02:30 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299614550156", "limit"=>"25"}
+  [1m[35mTeam Load (0.8ms)[0m  SELECT "teams".* FROM "teams"
+Completed 200 OK in 41ms (Views: 18.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/teams.json?_dc=1299614568388&limit=25" for 127.0.0.1 at 2011-03-08 13:02:48 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299614568388", "limit"=>"25"}
+  [1m[36mTeam Load (0.8ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 146ms (Views: 30.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/team_members.json?_dc=1299614568389&limit=25" for 127.0.0.1 at 2011-03-08 13:02:48 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299614568389", "limit"=>"25"}
+  [1m[35mTeamMember Load (0.7ms)[0m  SELECT "team_members".* FROM "team_members"
+Completed 200 OK in 36ms (Views: 21.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/teams.json?_dc=1299614570214&limit=25" for 127.0.0.1 at 2011-03-08 13:02:50 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299614570214", "limit"=>"25"}
+  [1m[36mTeam Load (0.8ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 33ms (Views: 17.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/team_members.json?_dc=1299614570217&limit=25" for 127.0.0.1 at 2011-03-08 13:02:50 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299614570217", "limit"=>"25"}
+  [1m[35mTeamMember Load (1.3ms)[0m  SELECT "team_members".* FROM "team_members"
+Completed 200 OK in 31ms (Views: 16.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/teams.json?_dc=1299614602420&limit=25" for 127.0.0.1 at 2011-03-08 13:03:22 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299614602420", "limit"=>"25"}
+  [1m[36mTeam Load (0.8ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 35ms (Views: 18.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/team_members.json?_dc=1299614602421&limit=25" for 127.0.0.1 at 2011-03-08 13:03:22 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299614602421", "limit"=>"25"}
+  [1m[35mTeamMember Load (0.8ms)[0m  SELECT "team_members".* FROM "team_members"
+Completed 200 OK in 56ms (Views: 41.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/teams.json?_dc=1299614949505&limit=25" for 127.0.0.1 at 2011-03-08 13:09:09 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299614949505", "limit"=>"25"}
+  [1m[36mTeam Load (0.9ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 38ms (Views: 19.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/teams.json?_dc=1299614964554&limit=25" for 127.0.0.1 at 2011-03-08 13:09:24 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299614964554", "limit"=>"25"}
+  [1m[35mTeam Load (0.8ms)[0m  SELECT "teams".* FROM "teams"
+Completed 200 OK in 70ms (Views: 53.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/team_members.json?_dc=1299614964555&limit=25" for 127.0.0.1 at 2011-03-08 13:09:24 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299614964555", "limit"=>"25"}
+  [1m[36mTeamMember Load (0.8ms)[0m  [1mSELECT "team_members".* FROM "team_members"[0m
+Completed 200 OK in 29ms (Views: 15.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/teams.json?_dc=1299615027981&limit=25" for 127.0.0.1 at 2011-03-08 13:10:28 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299615027981", "limit"=>"25"}
+  [1m[35mTeam Load (0.8ms)[0m  SELECT "teams".* FROM "teams"
+Completed 200 OK in 38ms (Views: 21.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/teams.json?_dc=1299619753345&limit=25" for 127.0.0.1 at 2011-03-08 14:29:13 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299619753345", "limit"=>"25"}
+  [1m[36mTeam Load (0.9ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 201ms (Views: 25.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/teams.json?_dc=1299619818602&limit=25" for 127.0.0.1 at 2011-03-08 14:30:18 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299619818602", "limit"=>"25"}
+  [1m[35mTeam Load (0.8ms)[0m  SELECT "teams".* FROM "teams"
+Completed 200 OK in 39ms (Views: 21.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/teams.json?_dc=1299619936705&limit=25" for 127.0.0.1 at 2011-03-08 14:32:16 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299619936705", "limit"=>"25"}
+  [1m[36mTeam Load (0.8ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 33ms (Views: 16.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/team_members.json?_dc=1299619937715&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 14:32:17 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299619937715", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[35mTeamMember Load (0.8ms)[0m  SELECT "team_members".* FROM "team_members"
+Completed 200 OK in 43ms (Views: 19.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/team_members.json?_dc=1299619937717&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 14:32:17 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299619937717", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[36mTeamMember Load (0.9ms)[0m  [1mSELECT "team_members".* FROM "team_members"[0m
+Completed 200 OK in 93ms (Views: 22.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/team_members.json?_dc=1299619941008&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 14:32:21 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299619941008", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[35mTeamMember Load (0.7ms)[0m  SELECT "team_members".* FROM "team_members"
+Completed 200 OK in 26ms (Views: 13.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/team_members.json?_dc=1299619941009&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 14:32:21 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299619941009", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[36mTeamMember Load (0.7ms)[0m  [1mSELECT "team_members".* FROM "team_members"[0m
+Completed 200 OK in 27ms (Views: 13.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/team_members.json?_dc=1299619942245&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 14:32:22 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299619942245", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2},{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[35mTeamMember Load (0.8ms)[0m  SELECT "team_members".* FROM "team_members"
+Completed 200 OK in 27ms (Views: 13.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/team_members.json?_dc=1299619942246&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 14:32:22 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299619942246", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2},{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[36mTeamMember Load (0.7ms)[0m  [1mSELECT "team_members".* FROM "team_members"[0m
+Completed 200 OK in 27ms (Views: 13.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/team_members.json?_dc=1299619943413&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 14:32:23 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299619943413", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2},{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[35mTeamMember Load (0.7ms)[0m  SELECT "team_members".* FROM "team_members"
+Completed 200 OK in 27ms (Views: 13.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/team_members.json?_dc=1299619943414&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 14:32:23 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299619943414", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2},{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[36mTeamMember Load (0.7ms)[0m  [1mSELECT "team_members".* FROM "team_members"[0m
+Completed 200 OK in 27ms (Views: 14.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/teams.json?_dc=1299619973426&limit=25" for 127.0.0.1 at 2011-03-08 14:32:53 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299619973426", "limit"=>"25"}
+  [1m[35mTeam Load (1.1ms)[0m  SELECT "teams".* FROM "teams"
+Completed 200 OK in 34ms (Views: 17.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/team_members.json?_dc=1299619976059&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 14:32:56 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299619976059", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[36mTeamMember Load (2.8ms)[0m  [1mSELECT "team_members".* FROM "team_members"[0m
+Completed 200 OK in 32ms (Views: 15.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/team_members.json?_dc=1299619976068&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 14:32:56 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299619976068", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[35mTeamMember Load (0.8ms)[0m  SELECT "team_members".* FROM "team_members"
+Completed 200 OK in 39ms (Views: 23.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/team_members.json?_dc=1299620188121&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 14:36:28 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299620188121", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2},{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2},{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[36mTeamMember Load (1.2ms)[0m  [1mSELECT "team_members".* FROM "team_members"[0m
+Completed 200 OK in 68ms (Views: 55.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/team_members.json?_dc=1299620188120&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 14:36:28 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299620188120", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2},{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2},{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[35mTeamMember Load (0.7ms)[0m  SELECT "team_members".* FROM "team_members"
+Completed 200 OK in 28ms (Views: 14.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/team_members.json?_dc=1299620189206&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 14:36:29 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299620189206", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2},{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2},{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[36mTeamMember Load (0.7ms)[0m  [1mSELECT "team_members".* FROM "team_members"[0m
+Completed 200 OK in 27ms (Views: 14.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/team_members.json?_dc=1299620189207&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 14:36:29 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299620189207", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2},{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2},{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[35mTeamMember Load (0.7ms)[0m  SELECT "team_members".* FROM "team_members"
+Completed 200 OK in 68ms (Views: 54.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/team_members.json?_dc=1299620190374&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 14:36:30 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299620190374", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2},{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2},{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2},{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[36mTeamMember Load (0.7ms)[0m  [1mSELECT "team_members".* FROM "team_members"[0m
+Completed 200 OK in 27ms (Views: 14.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/team_members.json?_dc=1299620190375&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 14:36:30 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299620190375", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2},{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2},{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2},{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[35mTeamMember Load (0.7ms)[0m  SELECT "team_members".* FROM "team_members"
+Completed 200 OK in 29ms (Views: 14.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/team_members.json?_dc=1299620192309&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 14:36:32 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299620192309", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2},{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2},{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2},{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[36mTeamMember Load (0.7ms)[0m  [1mSELECT "team_members".* FROM "team_members"[0m
+Completed 200 OK in 27ms (Views: 14.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/team_members.json?_dc=1299620192311&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 14:36:32 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299620192311", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2},{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2},{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2},{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[35mTeamMember Load (0.7ms)[0m  SELECT "team_members".* FROM "team_members"
+Completed 200 OK in 28ms (Views: 14.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/team_members.json?_dc=1299620197117&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 14:36:37 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299620197117", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2},{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2},{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2},{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2},{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[36mTeamMember Load (0.7ms)[0m  [1mSELECT "team_members".* FROM "team_members"[0m
+Completed 200 OK in 26ms (Views: 13.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/team_members.json?_dc=1299620197119&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%2C%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 14:36:37 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299620197119", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2},{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2},{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2},{\"property\":\"team_id\",\"value\":3},{\"property\":\"team_id\",\"value\":2},{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[35mTeamMember Load (0.7ms)[0m  SELECT "team_members".* FROM "team_members"
+Completed 200 OK in 26ms (Views: 13.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/teams.json?_dc=1299620267272&limit=25" for 127.0.0.1 at 2011-03-08 14:37:47 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299620267272", "limit"=>"25"}
+  [1m[36mTeam Load (1.3ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 38ms (Views: 19.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/team_members.json?_dc=1299620268185&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 14:37:48 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299620268185", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[35mTeamMember Load (2.1ms)[0m  SELECT "team_members".* FROM "team_members"
+Completed 200 OK in 94ms (Views: 16.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/team_members.json?_dc=1299620268184&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 14:37:48 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299620268184", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[36mTeamMember Load (0.8ms)[0m  [1mSELECT "team_members".* FROM "team_members"[0m
+Completed 200 OK in 35ms (Views: 17.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/team_members.json?_dc=1299620274907&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 14:37:54 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299620274907", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[35mTeamMember Load (0.7ms)[0m  SELECT "team_members".* FROM "team_members"
+Completed 200 OK in 26ms (Views: 13.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/team_members.json?_dc=1299620274908&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 14:37:54 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299620274908", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[36mTeamMember Load (0.7ms)[0m  [1mSELECT "team_members".* FROM "team_members"[0m
+Completed 200 OK in 27ms (Views: 14.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/teams.json?_dc=1299620914012&limit=25" for 127.0.0.1 at 2011-03-08 14:48:34 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299620914012", "limit"=>"25"}
+  [1m[35mTeam Load (0.8ms)[0m  SELECT "teams".* FROM "teams"
+Completed 200 OK in 45ms (Views: 25.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/teams.json?_dc=1299621015131&limit=25" for 127.0.0.1 at 2011-03-08 14:50:15 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299621015131", "limit"=>"25"}
+  [1m[36mTeam Load (0.8ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 43ms (Views: 17.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/team_members.json?_dc=1299621017035&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 14:50:17 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299621017035", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+Completed   in 1ms
+
+NoMethodError (undefined method `empty' for "[{\"property\":\"team_id\",\"value\":2}]":String):
+  app/controllers/team_members_controller.rb:4:in `index'
+
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.5ms)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.2ms)
+
+
+Started GET "/team_members.json?_dc=1299621017036&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 14:50:17 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299621017036", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+Completed   in 2ms
+
+NoMethodError (undefined method `empty' for "[{\"property\":\"team_id\",\"value\":2}]":String):
+  app/controllers/team_members_controller.rb:4:in `index'
+
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.1ms)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.8ms)
+
+
+Started GET "/teams.json?_dc=1299621202195&limit=25" for 127.0.0.1 at 2011-03-08 14:53:22 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299621202195", "limit"=>"25"}
+  [1m[35mTeam Load (2.9ms)[0m  SELECT "teams".* FROM "teams"
+Completed 200 OK in 38ms (Views: 20.1ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/team_members.json?_dc=1299621203085&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 14:53:23 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299621203085", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+Completed   in 1ms
+
+NoMethodError (undefined method `empty' for "[{\"property\":\"team_id\",\"value\":3}]":String):
+  app/controllers/team_members_controller.rb:4:in `index'
+
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.5ms)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.1ms)
+
+
+Started GET "/team_members.json?_dc=1299621203084&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 14:53:23 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299621203084", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+Completed   in 1ms
+
+NoMethodError (undefined method `empty' for "[{\"property\":\"team_id\",\"value\":3}]":String):
+  app/controllers/team_members_controller.rb:4:in `index'
+
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.1ms)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.0ms)
+
+
+Started GET "/teams.json?_dc=1299621218136&limit=25" for 127.0.0.1 at 2011-03-08 14:53:38 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299621218136", "limit"=>"25"}
+  [1m[36mTeam Load (0.8ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 37ms (Views: 20.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/team_members.json?_dc=1299621219277&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 14:53:39 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299621219277", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+Completed   in 55ms
+
+NoMethodError (undefined method `to_sym' for {"property"=>"team_id", "value"=>3}:Hash):
+  app/controllers/team_members_controller.rb:7:in `block in index'
+  app/controllers/team_members_controller.rb:6:in `each'
+  app/controllers/team_members_controller.rb:6:in `index'
+
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.5ms)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started GET "/team_members.json?_dc=1299621219278&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 14:53:39 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299621219278", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+Completed   in 16ms
+
+NoMethodError (undefined method `to_sym' for {"property"=>"team_id", "value"=>3}:Hash):
+  app/controllers/team_members_controller.rb:7:in `block in index'
+  app/controllers/team_members_controller.rb:6:in `each'
+  app/controllers/team_members_controller.rb:6:in `index'
+
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.1ms)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.8ms)
+
+
+Started GET "/teams.json?_dc=1299621294645&limit=25" for 127.0.0.1 at 2011-03-08 14:54:54 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299621294645", "limit"=>"25"}
+  [1m[35mTeam Load (0.8ms)[0m  SELECT "teams".* FROM "teams"
+Completed 200 OK in 35ms (Views: 17.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/team_members.json?_dc=1299621295626&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 14:54:55 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299621295626", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+Completed   in 1ms
+
+NoMethodError (undefined method `each' for "[{\"property\":\"team_id\",\"value\":3}]":String):
+  app/controllers/team_members_controller.rb:6:in `index'
+
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.3ms)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.7ms)
+
+
+Started GET "/team_members.json?_dc=1299621295628&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 14:54:55 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299621295628", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+Completed   in 1ms
+
+NoMethodError (undefined method `each' for "[{\"property\":\"team_id\",\"value\":3}]":String):
+  app/controllers/team_members_controller.rb:6:in `index'
+
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (12.1ms)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.5ms)
+
+
+Started GET "/teams.json?_dc=1299621315376&limit=25" for 127.0.0.1 at 2011-03-08 14:55:15 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299621315376", "limit"=>"25"}
+  [1m[36mTeam Load (4.5ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 38ms (Views: 17.9ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/team_members.json?_dc=1299621319447&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 14:55:19 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299621319447", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+Completed   in 18ms
+
+NoMethodError (undefined method `to_sym' for {"property"=>"team_id", "value"=>3}:Hash):
+  app/controllers/team_members_controller.rb:7:in `block in index'
+  app/controllers/team_members_controller.rb:6:in `each'
+  app/controllers/team_members_controller.rb:6:in `index'
+
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.5ms)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.7ms)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.3ms)
+
+
+Started GET "/team_members.json?_dc=1299621319448&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 14:55:19 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299621319448", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+Completed   in 12ms
+
+NoMethodError (undefined method `to_sym' for {"property"=>"team_id", "value"=>3}:Hash):
+  app/controllers/team_members_controller.rb:7:in `block in index'
+  app/controllers/team_members_controller.rb:6:in `each'
+  app/controllers/team_members_controller.rb:6:in `index'
+
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.2ms)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.1ms)
+
+
+Started GET "/teams.json?_dc=1299621454936&limit=25" for 127.0.0.1 at 2011-03-08 14:57:34 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299621454936", "limit"=>"25"}
+  [1m[35mTeam Load (2.9ms)[0m  SELECT "teams".* FROM "teams"
+Completed 200 OK in 41ms (Views: 19.7ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/team_members.json?_dc=1299621456245&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 14:57:36 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299621456245", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+Completed   in 18ms
+
+TypeError (can't convert Symbol into Integer):
+  app/controllers/team_members_controller.rb:6:in `[]'
+  app/controllers/team_members_controller.rb:6:in `index'
+
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.5ms)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.1ms)
+
+
+Started GET "/team_members.json?_dc=1299621456246&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 14:57:36 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299621456246", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+Completed   in 11ms
+
+TypeError (can't convert Symbol into Integer):
+  app/controllers/team_members_controller.rb:6:in `[]'
+  app/controllers/team_members_controller.rb:6:in `index'
+
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.1ms)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.8ms)
+
+
+Started GET "/teams.json?_dc=1299621562642&limit=25" for 127.0.0.1 at 2011-03-08 14:59:22 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299621562642", "limit"=>"25"}
+  [1m[36mTeam Load (2.9ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 37ms (Views: 17.4ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/team_members.json?_dc=1299621563555&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 14:59:23 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299621563555", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+Completed   in 30ms
+
+TypeError (can't convert Symbol into Integer):
+  app/controllers/team_members_controller.rb:6:in `[]'
+  app/controllers/team_members_controller.rb:6:in `index'
+
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.4ms)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.7ms)
+
+
+Started GET "/team_members.json?_dc=1299621563556&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 14:59:23 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299621563556", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+Completed   in 11ms
+
+TypeError (can't convert Symbol into Integer):
+  app/controllers/team_members_controller.rb:6:in `[]'
+  app/controllers/team_members_controller.rb:6:in `index'
+
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.3ms)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.7ms)
+
+
+Started GET "/teams.json?_dc=1299621619203&limit=25" for 127.0.0.1 at 2011-03-08 15:00:19 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299621619203", "limit"=>"25"}
+  [1m[35mTeam Load (4.2ms)[0m  SELECT "teams".* FROM "teams"
+Completed 200 OK in 48ms (Views: 21.8ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/team_members.json?_dc=1299621620169&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 15:00:20 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299621620169", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[36mTeamMember Load (0.9ms)[0m  [1mSELECT "team_members".* FROM "team_members" WHERE ('--- 
+- property
+- team_id
+','--- 
+- value
+- 2
+' = NULL)[0m
+SQLite3::SQLException: near ",": syntax error: SELECT "team_members".* FROM "team_members" WHERE ('--- 
+- property
+- team_id
+','--- 
+- value
+- 2
+' = NULL)
+Completed   in 48ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: near ",": syntax error: SELECT "team_members".* FROM "team_members" WHERE ('--- 
+- property
+- team_id
+','--- 
+- value
+- 2
+' = NULL)):
+  app/controllers/team_members_controller.rb:14:in `block (2 levels) in index'
+  app/controllers/team_members_controller.rb:13:in `index'
+
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  [1m[35mTeamMember Load (0.7ms)[0m  SELECT "team_members".* FROM "team_members" WHERE ('--- 
+- property
+- team_id
+','--- 
+- value
+- 2
+' = NULL)
+SQLite3::SQLException: near ",": syntax error: SELECT "team_members".* FROM "team_members" WHERE ('--- 
+- property
+- team_id
+','--- 
+- value
+- 2
+' = NULL)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (10.0ms)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.9ms)
+
+
+Started GET "/team_members.json?_dc=1299621620170&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 15:00:20 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299621620170", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[36mTeamMember Load (0.9ms)[0m  [1mSELECT "team_members".* FROM "team_members" WHERE ('--- 
+- property
+- team_id
+','--- 
+- value
+- 2
+' = NULL)[0m
+SQLite3::SQLException: near ",": syntax error: SELECT "team_members".* FROM "team_members" WHERE ('--- 
+- property
+- team_id
+','--- 
+- value
+- 2
+' = NULL)
+Completed   in 18ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: near ",": syntax error: SELECT "team_members".* FROM "team_members" WHERE ('--- 
+- property
+- team_id
+','--- 
+- value
+- 2
+' = NULL)):
+  app/controllers/team_members_controller.rb:14:in `block (2 levels) in index'
+  app/controllers/team_members_controller.rb:13:in `index'
+
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  [1m[35mTeamMember Load (0.7ms)[0m  SELECT "team_members".* FROM "team_members" WHERE ('--- 
+- property
+- team_id
+','--- 
+- value
+- 2
+' = NULL)
+SQLite3::SQLException: near ",": syntax error: SELECT "team_members".* FROM "team_members" WHERE ('--- 
+- property
+- team_id
+','--- 
+- value
+- 2
+' = NULL)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.2ms)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.3ms)
+
+
+Started GET "/teams.json?_dc=1299621679616&limit=25" for 127.0.0.1 at 2011-03-08 15:01:19 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299621679616", "limit"=>"25"}
+  [1m[36mTeam Load (2.9ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 41ms (Views: 20.3ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/team_members.json?_dc=1299621681280&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 15:01:21 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299621681280", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[35mTeamMember Load (0.7ms)[0m  SELECT "team_members".* FROM "team_members" WHERE (NULL = NULL)
+Completed 200 OK in 19ms (Views: 3.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/team_members.json?_dc=1299621681279&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 15:01:21 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299621681279", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[36mTeamMember Load (0.7ms)[0m  [1mSELECT "team_members".* FROM "team_members" WHERE (NULL = NULL)[0m
+Completed 200 OK in 25ms (Views: 4.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/team_members.json?_dc=1299621683369&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 15:01:23 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299621683369", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[35mTeamMember Load (0.6ms)[0m  SELECT "team_members".* FROM "team_members" WHERE (NULL = NULL)
+Completed 200 OK in 15ms (Views: 3.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/team_members.json?_dc=1299621683370&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 15:01:23 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299621683370", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[36mTeamMember Load (0.7ms)[0m  [1mSELECT "team_members".* FROM "team_members" WHERE (NULL = NULL)[0m
+Completed 200 OK in 17ms (Views: 3.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/team_members.json?_dc=1299621684360&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 15:01:24 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299621684360", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[35mTeamMember Load (0.6ms)[0m  SELECT "team_members".* FROM "team_members" WHERE (NULL = NULL)
+Completed 200 OK in 15ms (Views: 3.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/team_members.json?_dc=1299621684361&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 15:01:24 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299621684361", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[36mTeamMember Load (0.6ms)[0m  [1mSELECT "team_members".* FROM "team_members" WHERE (NULL = NULL)[0m
+Completed 200 OK in 56ms (Views: 3.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/teams.json?_dc=1299621837522&limit=25" for 127.0.0.1 at 2011-03-08 15:03:57 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299621837522", "limit"=>"25"}
+  [1m[35mTeam Load (3.1ms)[0m  SELECT "teams".* FROM "teams"
+Completed 200 OK in 36ms (Views: 17.1ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/team_members.json?_dc=1299621838386&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 15:03:58 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299621838386", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[36mTeamMember Load (0.8ms)[0m  [1mSELECT "team_members".* FROM "team_members" WHERE ('team_id' = NULL)[0m
+Completed 200 OK in 22ms (Views: 4.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/team_members.json?_dc=1299621838387&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 15:03:58 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299621838387", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[35mTeamMember Load (0.6ms)[0m  SELECT "team_members".* FROM "team_members" WHERE ('team_id' = NULL)
+Completed 200 OK in 18ms (Views: 3.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/teams.json?_dc=1299621856456&limit=25" for 127.0.0.1 at 2011-03-08 15:04:16 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299621856456", "limit"=>"25"}
+  [1m[36mTeam Load (0.9ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 44ms (Views: 20.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/team_members.json?_dc=1299621857809&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 15:04:17 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299621857809", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[35mTeamMember Load (0.6ms)[0m  SELECT "team_members".* FROM "team_members" WHERE ('team_id' = 3)
+Completed 200 OK in 32ms (Views: 11.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/team_members.json?_dc=1299621857810&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 15:04:17 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299621857810", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[36mTeamMember Load (0.7ms)[0m  [1mSELECT "team_members".* FROM "team_members" WHERE ('team_id' = 3)[0m
+Completed 200 OK in 23ms (Views: 3.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/team_members.json?_dc=1299621859100&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 15:04:19 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299621859100", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[35mTeamMember Load (0.9ms)[0m  SELECT "team_members".* FROM "team_members" WHERE ('team_id' = 2)
+Completed 200 OK in 56ms (Views: 3.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/team_members.json?_dc=1299621859101&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 15:04:19 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299621859101", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[36mTeamMember Load (0.6ms)[0m  [1mSELECT "team_members".* FROM "team_members" WHERE ('team_id' = 2)[0m
+Completed 200 OK in 16ms (Views: 3.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/team_members.json?_dc=1299621886704&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 15:04:46 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299621886704", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[35mTeamMember Load (0.6ms)[0m  SELECT "team_members".* FROM "team_members" WHERE ('team_id' = 3)
+Completed 200 OK in 16ms (Views: 3.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/team_members.json?_dc=1299621886705&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 15:04:46 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299621886705", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[36mTeamMember Load (0.7ms)[0m  [1mSELECT "team_members".* FROM "team_members" WHERE ('team_id' = 3)[0m
+Completed 200 OK in 18ms (Views: 3.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/teams.json?_dc=1299622036379&limit=25" for 127.0.0.1 at 2011-03-08 15:07:16 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299622036379", "limit"=>"25"}
+  [1m[35mTeam Load (1.5ms)[0m  SELECT "teams".* FROM "teams"
+Completed 200 OK in 69ms (Views: 16.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/team_members.json?_dc=1299622039265&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 15:07:19 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299622039265", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[36mTeamMember Load (0.7ms)[0m  [1mSELECT "team_members".* FROM "team_members" WHERE ('team_id' = 3)[0m
+Completed 200 OK in 17ms (Views: 3.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/team_members.json?_dc=1299622039273&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 15:07:19 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299622039273", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[35mTeamMember Load (0.7ms)[0m  SELECT "team_members".* FROM "team_members" WHERE ('team_id' = 3)
+Completed 200 OK in 17ms (Views: 3.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/team_members.json?_dc=1299622053406&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 15:07:33 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299622053406", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[36mTeamMember Load (1.0ms)[0m  [1mSELECT "team_members".* FROM "team_members" WHERE ('team_id' = 2)[0m
+Completed 200 OK in 56ms (Views: 3.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/team_members.json?_dc=1299622053414&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 15:07:33 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299622053414", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[35mTeamMember Load (0.6ms)[0m  SELECT "team_members".* FROM "team_members" WHERE ('team_id' = 2)
+Completed 200 OK in 17ms (Views: 3.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/teams.json?_dc=1299622094990&limit=25" for 127.0.0.1 at 2011-03-08 15:08:15 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299622094990", "limit"=>"25"}
+  [1m[36mTeam Load (1.1ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 32ms (Views: 16.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/team_members.json?_dc=1299622096359&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 15:08:16 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299622096359", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[35mTeamMember Load (0.7ms)[0m  SELECT "team_members".* FROM "team_members" WHERE ('team_id' = 3)
+Completed 200 OK in 16ms (Views: 3.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/teams.json?_dc=1299622227993&limit=25" for 127.0.0.1 at 2011-03-08 15:10:28 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299622227993", "limit"=>"25"}
+  [1m[36mTeam Load (1.2ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 44ms (Views: 19.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/team_members.json?_dc=1299622229556&limit=25&filter=%5B%7B%22property%22%3A%22teams_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 15:10:29 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299622229556", "limit"=>"25", "filter"=>"[{\"property\":\"teams_id\",\"value\":3}]"}
+  [1m[35mTeamMember Load (0.7ms)[0m  SELECT "team_members".* FROM "team_members" WHERE ('teams_id' = 3)
+Completed 200 OK in 20ms (Views: 3.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/team_members.json?_dc=1299622231121&limit=25&filter=%5B%7B%22property%22%3A%22teams_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 15:10:31 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299622231121", "limit"=>"25", "filter"=>"[{\"property\":\"teams_id\",\"value\":2}]"}
+  [1m[36mTeamMember Load (0.8ms)[0m  [1mSELECT "team_members".* FROM "team_members" WHERE ('teams_id' = 2)[0m
+Completed 200 OK in 16ms (Views: 3.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/team_members.json?_dc=1299622232105&limit=25&filter=%5B%7B%22property%22%3A%22teams_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 15:10:32 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299622232105", "limit"=>"25", "filter"=>"[{\"property\":\"teams_id\",\"value\":3}]"}
+  [1m[35mTeamMember Load (0.6ms)[0m  SELECT "team_members".* FROM "team_members" WHERE ('teams_id' = 3)
+Completed 200 OK in 16ms (Views: 2.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/teams.json?_dc=1299622311211&limit=25" for 127.0.0.1 at 2011-03-08 15:11:51 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299622311211", "limit"=>"25"}
+  [1m[36mTeam Load (0.8ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 35ms (Views: 19.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/team_members.json?_dc=1299622312065&limit=25&filter=%5B%7B%22property%22%3A%22teams_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 15:11:52 -0700
+
+SyntaxError (/Users/todd/Sites/avcscoreboard/admin/app/controllers/team_members_controller.rb:11: target of repeat operator is not specified: /*if params[:filter] && !params[:filter].empty?
+      filters = ActiveSupport::JSON.decode(params[:filter])
+      filters.each do |filter|
+        @team_members = TeamMember.where('? = ?',filter['property'],filter['value'])
+      end
+    else  
+      @team_members = TeamMember.all
+    end*/):
+  
+
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.2ms)
+
+
+Started GET "/teams.json?_dc=1299622476042&limit=25" for 127.0.0.1 at 2011-03-08 15:14:36 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299622476042", "limit"=>"25"}
+  [1m[35mTeam Load (1.3ms)[0m  SELECT "teams".* FROM "teams"
+Completed 200 OK in 38ms (Views: 18.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/team_members.json?_dc=1299622477772&limit=25&filter=%5B%7B%22property%22%3A%22teams_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 15:14:37 -0700
+
+SyntaxError (/Users/todd/Sites/avcscoreboard/admin/app/controllers/team_members_controller.rb:4: syntax error, unexpected '='
+    =begin
+     ^
+/Users/todd/Sites/avcscoreboard/admin/app/controllers/team_members_controller.rb:13: syntax error, unexpected '=', expecting keyword_end
+    =end
+     ^
+/Users/todd/Sites/avcscoreboard/admin/app/controllers/team_members_controller.rb:66: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.0ms)
+
+
+Started GET "/teams.json?_dc=1299622498500&limit=25" for 127.0.0.1 at 2011-03-08 15:14:58 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299622498500", "limit"=>"25"}
+  [1m[36mTeam Load (0.8ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 34ms (Views: 17.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/team_members.json?_dc=1299622499307&limit=25&filter=%5B%7B%22property%22%3A%22teams_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 15:14:59 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299622499307", "limit"=>"25", "filter"=>"[{\"property\":\"teams_id\",\"value\":3}]"}
+  [1m[35mTeamMember Load (2.9ms)[0m  SELECT "team_members".* FROM "team_members"
+Completed 200 OK in 32ms (Views: 14.9ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/teams.json?_dc=1299622646706&limit=25" for 127.0.0.1 at 2011-03-08 15:17:26 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299622646706", "limit"=>"25"}
+  [1m[36mTeam Load (1.2ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 62ms (Views: 17.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/team_members.json?_dc=1299622647855&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 15:17:27 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299622647855", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[35mTeamMember Load (2.9ms)[0m  SELECT "team_members".* FROM "team_members"
+Completed 200 OK in 33ms (Views: 15.7ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/team_members.json?_dc=1299622650318&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 15:17:30 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299622650318", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[36mTeamMember Load (0.7ms)[0m  [1mSELECT "team_members".* FROM "team_members"[0m
+Completed 200 OK in 27ms (Views: 13.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/team_members.json?_dc=1299622651189&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 15:17:31 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299622651189", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[35mTeamMember Load (0.7ms)[0m  SELECT "team_members".* FROM "team_members"
+Completed 200 OK in 28ms (Views: 14.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/team_members.json?_dc=1299622651781&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 15:17:31 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299622651781", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[36mTeamMember Load (0.7ms)[0m  [1mSELECT "team_members".* FROM "team_members"[0m
+Completed 200 OK in 29ms (Views: 14.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/teams.json?_dc=1299622683195&limit=25" for 127.0.0.1 at 2011-03-08 15:18:03 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299622683195", "limit"=>"25"}
+  [1m[35mTeam Load (5.0ms)[0m  SELECT "teams".* FROM "teams"
+Completed 200 OK in 40ms (Views: 18.1ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/team_members.json?_dc=1299622683886&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 15:18:03 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299622683886", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[36mTeamMember Load (0.7ms)[0m  [1mSELECT "team_members".* FROM "team_members" WHERE ('team_id' = 2)[0m
+Completed 200 OK in 17ms (Views: 3.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/team_members.json?_dc=1299622685780&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 15:18:05 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299622685780", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[35mTeamMember Load (0.6ms)[0m  SELECT "team_members".* FROM "team_members" WHERE ('team_id' = 3)
+Completed 200 OK in 15ms (Views: 3.0ms | ActiveRecord: 0.6ms)
+  [1m[36mSQL (1.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mTeamMember Load (0.7ms)[0m  SELECT "team_members".* FROM "team_members" WHERE "team_members"."team_id" = 2
+
+
+Started GET "/teams.json?_dc=1299622852907&limit=25" for 127.0.0.1 at 2011-03-08 15:20:53 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299622852907", "limit"=>"25"}
+  [1m[36mTeam Load (0.9ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+Completed 200 OK in 199ms (Views: 28.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/team_members.json?_dc=1299622855176&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 15:20:55 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299622855176", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+Completed   in 78ms
+
+NoMethodError (undefined method `to_sym' for nil:NilClass):
+  app/controllers/team_members_controller.rb:7:in `block in index'
+  app/controllers/team_members_controller.rb:6:in `each'
+  app/controllers/team_members_controller.rb:6:in `index'
+
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.4ms)
+Rendered /Users/todd/.rvm/gems/ruby-1.9.2-p180/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.6ms)
+
+
+Started GET "/teams.json?_dc=1299622938953&limit=25" for 127.0.0.1 at 2011-03-08 15:22:18 -0700
+  Processing by TeamsController#index as JSON
+  Parameters: {"_dc"=>"1299622938953", "limit"=>"25"}
+  [1m[35mTeam Load (1.2ms)[0m  SELECT "teams".* FROM "teams"
+Completed 200 OK in 37ms (Views: 19.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/team_members.json?_dc=1299622940998&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 15:22:21 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299622940998", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mTeamMember Load (0.7ms)[0m  SELECT "team_members".* FROM "team_members" WHERE "team_members"."team_id" = 2
+Completed 200 OK in 46ms (Views: 16.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/team_members.json?_dc=1299622943372&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 15:22:23 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299622943372", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[36mTeamMember Load (0.2ms)[0m  [1mSELECT "team_members".* FROM "team_members" WHERE "team_members"."team_id" = 3[0m
+Completed 200 OK in 20ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/team_members.json?_dc=1299622944675&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 15:22:24 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299622944675", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[35mTeamMember Load (0.3ms)[0m  SELECT "team_members".* FROM "team_members" WHERE "team_members"."team_id" = 2
+Completed 200 OK in 32ms (Views: 15.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/team_members.json?_dc=1299622945748&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 15:22:25 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299622945748", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[36mTeamMember Load (0.2ms)[0m  [1mSELECT "team_members".* FROM "team_members" WHERE "team_members"."team_id" = 3[0m
+Completed 200 OK in 20ms (Views: 3.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/team_members.json?_dc=1299622946540&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 15:22:26 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299622946540", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[35mTeamMember Load (0.3ms)[0m  SELECT "team_members".* FROM "team_members" WHERE "team_members"."team_id" = 2
+Completed 200 OK in 31ms (Views: 14.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/team_members.json?_dc=1299622956915&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 15:22:36 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299622956915", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[36mTeamMember Load (0.2ms)[0m  [1mSELECT "team_members".* FROM "team_members" WHERE "team_members"."team_id" = 3[0m
+Completed 200 OK in 19ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/team_members.json?_dc=1299622957755&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 15:22:37 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299622957755", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[35mTeamMember Load (0.3ms)[0m  SELECT "team_members".* FROM "team_members" WHERE "team_members"."team_id" = 2
+Completed 200 OK in 70ms (Views: 54.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/team_members.json?_dc=1299622968579&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 15:22:48 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299622968579", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[36mTeamMember Load (0.2ms)[0m  [1mSELECT "team_members".* FROM "team_members" WHERE "team_members"."team_id" = 3[0m
+Completed 200 OK in 19ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/team_members.json?_dc=1299622972458&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 15:22:52 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299622972458", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[35mTeamMember Load (0.3ms)[0m  SELECT "team_members".* FROM "team_members" WHERE "team_members"."team_id" = 2
+Completed 200 OK in 30ms (Views: 14.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/team_members.json?_dc=1299623084937&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 15:24:44 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299623084937", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[36mTeamMember Load (2.4ms)[0m  [1mSELECT "team_members".* FROM "team_members" WHERE "team_members"."team_id" = 2[0m
+Completed 200 OK in 74ms (Views: 15.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/team_members.json?_dc=1299623084938&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 15:24:45 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299623084938", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[35mTeamMember Load (0.3ms)[0m  SELECT "team_members".* FROM "team_members" WHERE "team_members"."team_id" = 2
+Completed 200 OK in 34ms (Views: 14.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/team_members.json?_dc=1299623085791&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 15:24:45 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299623085791", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[36mTeamMember Load (0.3ms)[0m  [1mSELECT "team_members".* FROM "team_members" WHERE "team_members"."team_id" = 3[0m
+Completed 200 OK in 19ms (Views: 3.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/team_members.json?_dc=1299623085792&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 15:24:45 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299623085792", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[35mTeamMember Load (0.2ms)[0m  SELECT "team_members".* FROM "team_members" WHERE "team_members"."team_id" = 3
+Completed 200 OK in 19ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/team_members.json?_dc=1299623087406&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 15:24:47 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299623087406", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[36mTeamMember Load (0.3ms)[0m  [1mSELECT "team_members".* FROM "team_members" WHERE "team_members"."team_id" = 2[0m
+Completed 200 OK in 31ms (Views: 14.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/team_members.json?_dc=1299623087407&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 15:24:47 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299623087407", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[35mTeamMember Load (0.3ms)[0m  SELECT "team_members".* FROM "team_members" WHERE "team_members"."team_id" = 2
+Completed 200 OK in 33ms (Views: 14.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/team_members.json?_dc=1299623088136&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 15:24:48 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299623088136", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[36mTeamMember Load (0.2ms)[0m  [1mSELECT "team_members".* FROM "team_members" WHERE "team_members"."team_id" = 3[0m
+Completed 200 OK in 19ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/team_members.json?_dc=1299623088137&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 15:24:48 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299623088137", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[35mTeamMember Load (0.3ms)[0m  SELECT "team_members".* FROM "team_members" WHERE "team_members"."team_id" = 3
+Completed 200 OK in 19ms (Views: 3.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/team_members.json?_dc=1299623091335&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 15:24:51 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299623091335", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[36mTeamMember Load (0.3ms)[0m  [1mSELECT "team_members".* FROM "team_members" WHERE "team_members"."team_id" = 2[0m
+Completed 200 OK in 31ms (Views: 15.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/team_members.json?_dc=1299623091334&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 15:24:51 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299623091334", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[35mTeamMember Load (0.3ms)[0m  SELECT "team_members".* FROM "team_members" WHERE "team_members"."team_id" = 2
+Completed 200 OK in 32ms (Views: 15.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/team_members.json?_dc=1299623092254&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 15:24:52 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299623092254", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[36mTeamMember Load (0.2ms)[0m  [1mSELECT "team_members".* FROM "team_members" WHERE "team_members"."team_id" = 3[0m
+Completed 200 OK in 19ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/team_members.json?_dc=1299623092255&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 15:24:52 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299623092255", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[35mTeamMember Load (0.2ms)[0m  SELECT "team_members".* FROM "team_members" WHERE "team_members"."team_id" = 3
+Completed 200 OK in 21ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/team_members.json?_dc=1299623104743&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 15:25:04 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299623104743", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[36mTeamMember Load (0.3ms)[0m  [1mSELECT "team_members".* FROM "team_members" WHERE "team_members"."team_id" = 2[0m
+Completed 200 OK in 30ms (Views: 14.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/team_members.json?_dc=1299623104742&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 15:25:04 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299623104742", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[35mTeamMember Load (0.3ms)[0m  SELECT "team_members".* FROM "team_members" WHERE "team_members"."team_id" = 2
+Completed 200 OK in 33ms (Views: 16.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/team_members.json?_dc=1299623492555&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 15:31:32 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299623492555", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[36mTeamMember Load (2.5ms)[0m  [1mSELECT "team_members".* FROM "team_members" WHERE "team_members"."team_id" = 3[0m
+Completed 200 OK in 69ms (Views: 5.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/team_members.json?_dc=1299623492556&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 15:31:32 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299623492556", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[35mTeamMember Load (0.2ms)[0m  SELECT "team_members".* FROM "team_members" WHERE "team_members"."team_id" = 3
+Completed 200 OK in 21ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/team_members.json?_dc=1299623493944&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 15:31:33 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299623493944", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[36mTeamMember Load (0.3ms)[0m  [1mSELECT "team_members".* FROM "team_members" WHERE "team_members"."team_id" = 2[0m
+Completed 200 OK in 31ms (Views: 14.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/team_members.json?_dc=1299623493945&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 15:31:34 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299623493945", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[35mTeamMember Load (0.3ms)[0m  SELECT "team_members".* FROM "team_members" WHERE "team_members"."team_id" = 2
+Completed 200 OK in 72ms (Views: 14.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/team_members.json?_dc=1299623496507&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 15:31:36 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299623496507", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[36mTeamMember Load (0.3ms)[0m  [1mSELECT "team_members".* FROM "team_members" WHERE "team_members"."team_id" = 3[0m
+Completed 200 OK in 19ms (Views: 3.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/team_members.json?_dc=1299623496506&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 15:31:36 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299623496506", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[35mTeamMember Load (0.2ms)[0m  SELECT "team_members".* FROM "team_members" WHERE "team_members"."team_id" = 3
+Completed 200 OK in 20ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/team_members.json?_dc=1299623500082&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 15:31:40 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299623500082", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[36mTeamMember Load (0.3ms)[0m  [1mSELECT "team_members".* FROM "team_members" WHERE "team_members"."team_id" = 2[0m
+Completed 200 OK in 73ms (Views: 14.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/team_members.json?_dc=1299623500083&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 15:31:40 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299623500083", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[35mTeamMember Load (0.3ms)[0m  SELECT "team_members".* FROM "team_members" WHERE "team_members"."team_id" = 2
+Completed 200 OK in 31ms (Views: 14.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/team_members.json?_dc=1299623760885&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 15:36:00 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299623760885", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[36mTeamMember Load (0.2ms)[0m  [1mSELECT "team_members".* FROM "team_members" WHERE "team_members"."team_id" = 3[0m
+Completed 200 OK in 20ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/team_members.json?_dc=1299623760886&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A3%7D%5D" for 127.0.0.1 at 2011-03-08 15:36:00 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299623760886", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":3}]"}
+  [1m[35mTeamMember Load (0.2ms)[0m  SELECT "team_members".* FROM "team_members" WHERE "team_members"."team_id" = 3
+Completed 200 OK in 19ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/team_members.json?_dc=1299623762884&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 15:36:02 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299623762884", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[36mTeamMember Load (0.3ms)[0m  [1mSELECT "team_members".* FROM "team_members" WHERE "team_members"."team_id" = 2[0m
+Completed 200 OK in 30ms (Views: 14.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/team_members.json?_dc=1299623762883&limit=25&filter=%5B%7B%22property%22%3A%22team_id%22%2C%22value%22%3A2%7D%5D" for 127.0.0.1 at 2011-03-08 15:36:02 -0700
+  Processing by TeamMembersController#index as JSON
+  Parameters: {"_dc"=>"1299623762883", "limit"=>"25", "filter"=>"[{\"property\":\"team_id\",\"value\":2}]"}
+  [1m[35mTeamMember Load (0.3ms)[0m  SELECT "team_members".* FROM "team_members" WHERE "team_members"."team_id" = 2
+Completed 200 OK in 32ms (Views: 14.8ms | ActiveRecord: 0.3ms)

@@ -9,7 +9,8 @@ Ext.regModel('team', {
   ],
   proxy: {
     type: 'rest',
-    url: '/teams.json',
+    url: '/teams',
+    format: 'json',
     reader: {
       type: 'json',
       idProperty: 'id',

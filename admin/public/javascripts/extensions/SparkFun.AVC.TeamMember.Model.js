@@ -8,7 +8,8 @@ Ext.regModel('team_member', {
   ],
   proxy: {
     type: 'rest',
-    url: '/team_members.json',
+    url: '/team_members',
+    format:'json',
     reader: {
       type: 'json',
       root: 'data'

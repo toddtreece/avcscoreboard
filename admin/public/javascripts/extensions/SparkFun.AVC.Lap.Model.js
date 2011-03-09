@@ -10,7 +10,8 @@ Ext.regModel('lap', {
   ],
   proxy: {
     type: 'rest',
-    url: '/laps.json',
+    url: '/laps',
+    format: 'json',
     reader: {
       type: 'json',
       root: 'data'

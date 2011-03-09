@@ -8,7 +8,8 @@ Ext.regModel('heat', {
   ],
   proxy: {
     type: 'rest',
-    url: '/heats.json',
+    url: '/heats',
+    format:'json',
     reader: {
       type: 'json',
       root: 'data'

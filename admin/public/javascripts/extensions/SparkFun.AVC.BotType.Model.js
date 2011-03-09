@@ -6,7 +6,8 @@ Ext.regModel('bot_type', {
   ],
   proxy: {
     type: 'rest',
-    url: '/bot_types.json',
+    url: '/bot_types',
+    format:'json',
     reader: {
       type: 'json',
       root: 'data'

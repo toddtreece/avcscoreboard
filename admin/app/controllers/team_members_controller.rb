@@ -1,7 +1,14 @@
 class TeamMembersController < ApplicationController
   # GET /team_members.json
   def index
-    @team_members = TeamMember.all
+    if params[:filter] && !params[:filter].empty?
+      filters = ActiveSupport::JSON.decode(params[:filter])
+      filters.each do |filter|
+        @team_members = TeamMember.where(filter['property'] => filter['value'])
+      end
+    else  
+      @team_members = TeamMember.all
+    end
 
     respond_to do |format|
       format.json { render :json => { :success => true, :data => @team_members } } 
