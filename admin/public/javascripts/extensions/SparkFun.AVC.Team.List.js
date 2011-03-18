@@ -7,6 +7,7 @@ Ext.define('SparkFun.AVC.Team.List', {
   autoScroll: true,
   onRowSelect: function(model, record, rownumber) {
     var mem = Ext.getCmp('members');
+    mem.team_id = record.data.id;
     var store = mem.store;
     store.clearFilter();
     store.filter('team_id',record.data.id);
@@ -25,7 +26,7 @@ Ext.define('SparkFun.AVC.Team.List', {
         text: 'ID',
         id: 'id',
         sortable: true,
-        flex: 0.5
+        flex: 1
       },
       {
         dataIndex: 'name',

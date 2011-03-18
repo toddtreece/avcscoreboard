@@ -11,14 +11,20 @@ Ext.define('SparkFun.AVC.Dashboard', {
         split:true,
         items: [
         new SparkFun.AVC.Team.List({
-          region: 'center',
-          border: false
+          region: 'north',
+          border: false,
+          height: '33%'
+          
         }),
         new SparkFun.AVC.TeamMember.List({
-          region: 'south',
-          height:'50%',
+          region: 'center',
+          height:'33%',
           hidden:true,
           split:true
+        }),
+        new SparkFun.AVC.AllMembers.List({
+          region: 'south',
+          height:'33%'
         })
         ]
       },

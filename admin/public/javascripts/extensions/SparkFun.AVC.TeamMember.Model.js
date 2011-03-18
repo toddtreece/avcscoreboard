@@ -4,7 +4,7 @@ Ext.regModel('team_member', {
     {name: 'id', type: 'int'},
     {name: 'firstname', type: 'string'},
     {name: 'lastname', type: 'string'},
-    {name: 'teams_id', type: 'int'}
+    {name: 'team_id', type: 'int'}
   ],
   proxy: {
     type: 'rest',

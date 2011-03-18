@@ -42,7 +42,10 @@ class TeamMembersController < ApplicationController
     @team_member = TeamMember.find(params[:id])
 
     respond_to do |format|
-      if @team_member.update_attributes(params[:team_member])
+      @team_member.firstname = params[:firstname]
+      @team_member.lastname = params[:lastname]
+      @team_member.team_id = params[:team_id]
+      if @team_member.save
         format.json { render :json => { :success => true, :message => 'Updated' } }
       else
         format.json { render :json => { :success => false, :message => 'Update Failed' } }  
