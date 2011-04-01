@@ -1,4 +1,5 @@
 Ext.define('SparkFun.AVC.Team.List', {
+  id: 'teams',
   extend: 'Ext.grid.GridPanel',
   title: 'Teams',
   viewConfig: {
@@ -9,10 +10,45 @@ Ext.define('SparkFun.AVC.Team.List', {
     var mem = Ext.getCmp('members');
     mem.team_id = record.data.id;
     var store = mem.store;
-    store.clearFilter();
-    store.filter('team_id',record.data.id);
+    store.filters.removeAt(0);
+    store.filter('team_id', record.data.id);
     mem.show();
+    Ext.getCmp('teams').doLayout();
+    Ext.getCmp('allMembers').doLayout();
   },
+  tbar: [{
+    text: 'New Team',
+    xtype: 'button',
+    iconCls: 'add-icon',
+    handler: function() {
+      win = Ext.widget('window', {
+        title: 'New Team',
+        closeAction: 'hide',
+        bodyPadding: 10,
+        width: 400,
+        height: 200,
+        layout: 'fit',
+        modal: true,
+        items: [new SparkFun.AVC.Team.Form()]
+      });
+      win.show();
+    }
+  },
+  {
+    text: 'Delete Team',
+    xtype: 'button',
+    iconCls: 'delete-icon',
+    handler: function() {
+      if (Ext.getCmp('teams').down("dataview").getSelectionCount() > 0) {
+        for (team in Ext.getCmp('teams').down("dataview").getSelectedRecords()) {
+          Ext.Ajax.request({
+            url: 'teams/' + team.id + '.json',
+            method:'DELETE'
+          });
+        }
+      }
+    }
+  }],
   initComponent: function() {
     Ext.apply(this, {
       store: new Ext.data.Store({

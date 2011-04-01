@@ -8,6 +8,24 @@ Ext.define('SparkFun.AVC.AllMembers.List', {
     record.save();
     this.store.load();
   },
+  tbar: [{
+    text: 'New Competitor',
+    xtype: 'button',
+    iconCls:'add-icon',
+    handler: function() {
+      win = Ext.widget('window', {
+        title: 'New Competitor',
+        closeAction: 'hide',
+        bodyPadding: 10,
+        width: 400,
+        height:200,
+        layout: 'fit',
+        modal: true,
+        items: [new SparkFun.AVC.TeamMember.Form()]
+      });
+      win.show();
+    }
+  }],
   viewConfig: {
     stripeRows: true,
     plugins: {

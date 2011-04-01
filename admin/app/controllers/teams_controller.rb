@@ -19,7 +19,11 @@ class TeamsController < ApplicationController
 
   # POST /teams.json
   def create
-    @team = Team.new(params[:team])
+    @team = Team.new
+    @team.name = params[:name]
+    @team.city = params[:city]
+    @team.state = params[:state]
+    @team.country = params[:country]
 
     respond_to do |format|
       if @team.save
@@ -33,9 +37,13 @@ class TeamsController < ApplicationController
   # PUT /teams/1.json
   def update
     @team = Team.find(params[:id])
+    @team.name = params[:name]
+    @team.city = params[:city]
+    @team.state = params[:state]
+    @team.country = params[:country]
 
     respond_to do |format|
-      if @team.update_attributes(params[:team])
+      if @team.save
         format.json { render :json => { :success => true, :message => 'Updated' } }
       else
         format.json { render :json => { :success => false, :message => 'Update failed' } }

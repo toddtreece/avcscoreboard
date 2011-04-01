@@ -26,7 +26,10 @@ class TeamMembersController < ApplicationController
 
   # POST /team_members.json
   def create
-    @team_member = TeamMember.new(params[:team_member])
+    @team_member = TeamMember.new
+    @team_member.firstname = params[:firstname]
+    @team_member.lastname = params[:lastname]
+    @team_member.team_id = 0
 
     respond_to do |format|
       if @team_member.save
@@ -40,11 +43,11 @@ class TeamMembersController < ApplicationController
   # PUT /team_members/1.json
   def update
     @team_member = TeamMember.find(params[:id])
+    @team_member.firstname = params[:firstname]
+    @team_member.lastname = params[:lastname]
+    @team_member.team_id = params[:team_id]
 
     respond_to do |format|
-      @team_member.firstname = params[:firstname]
-      @team_member.lastname = params[:lastname]
-      @team_member.team_id = params[:team_id]
       if @team_member.save
         format.json { render :json => { :success => true, :message => 'Updated' } }
       else
