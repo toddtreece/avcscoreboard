@@ -10,5 +10,6 @@ void setup() {
 }
 
 void draw() {
-  
+  scoreboard.reDraw();
+  scoreboard.weather.wind.setDirection(90);
 }

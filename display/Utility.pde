@@ -3,7 +3,7 @@ class Utility {
   color lightRed = #EE3524;
   color darkRed = #8A1F03;
   color grey = #D0D2D3;
-  color white = # FFFFFF;  
+  color white = #FFFFFF;
   
   int calculateHeight(int pixel_height) {
     float h = pixel_height / 1080.0;

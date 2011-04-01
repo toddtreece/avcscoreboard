@@ -10,8 +10,13 @@ class Scoreboard {
     } else {
       this.bg = loadImage("bg_dev.png");
     }
-    background(this.bg);
+    
     this.weather = new Weather();
+    
+  }
+  
+  void reDraw() {
+    background(this.bg);
     this.weather.init();
   }
   
