@@ -10,7 +10,7 @@ class Wind {
   }
 
   void init() {
-    //48pt at 1080p
+    //36px at 1080p
     textFont(
       createFont(
         "Arial-Black", 
@@ -27,10 +27,10 @@ class Wind {
     noFill();
     stroke(#FFFFFF);
     ellipse(
-        round(width * 0.085417), 
-        round(height * 0.8806),
-        round(width * 0.072917),
-        round(height * 0.1297)
+      round(width * 0.085417), 
+      round(height * 0.8806),
+      round(width * 0.072917),
+      round(height * 0.1297)
     );
     fill(0);
     text(
