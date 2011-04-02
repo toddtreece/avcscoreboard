@@ -19,5 +19,5 @@ class Scoreboard {
     background(this.bg);
     this.weather.init();
   }
-  
+
 }

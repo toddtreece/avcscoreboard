@@ -4,12 +4,12 @@ SoftFullScreen fs;
 Scoreboard scoreboard;
 
 void setup() {
-  scoreboard = new Scoreboard(1920, 1080);
+  scoreboard = new Scoreboard(1920/2, 1080/2);
   fs = new SoftFullScreen(this);
-  fs.enter();
+  //fs.enter();
 }
 
 void draw() {
   scoreboard.reDraw();
-  scoreboard.weather.wind.setDirection(90);
+  scoreboard.weather.wind.setDirection(90.0);
 }

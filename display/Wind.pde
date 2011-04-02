@@ -3,9 +3,9 @@ class Wind {
   Utility utility;
   
   //compass coordinates & size
-  int compassX = 164;
-  int compassY = 951;
-  int compassRadius = 140;
+  int compassX;
+  int compassY;
+  int compassDiameter;
   
   //direction arrow coordinates
   int dirX_1;
@@ -24,12 +24,16 @@ class Wind {
     this.windSpeed = 0;
     this.windDirection = 0;
     
-    this.dirX_1 = utility.calculateWidth(164);
-    this.dirY_1 = utility.calculateHeight(907);
-    this.dirX_2 = utility.calculateWidth(150);
-    this.dirY_2 = utility.calculateHeight(867); 
-    this.dirX_3 = utility.calculateWidth(178);
-    this.dirY_3 = utility.calculateHeight(867);
+    this.compassX = utility.calculateWidth(164);
+    this.compassY = utility.calculateHeight(951);
+    this.compassDiameter = utility.calculateHeight(140);
+    
+    this.dirX_1 = utility.calculateWidth(0);
+    this.dirY_1 = utility.calculateHeight(20);
+    this.dirX_2 = utility.calculateWidth(-14);
+    this.dirY_2 = utility.calculateHeight(-20); 
+    this.dirX_3 = utility.calculateWidth(14);
+    this.dirY_3 = utility.calculateHeight(-20);
   }
 
   void init() {
@@ -43,10 +47,10 @@ class Wind {
     noFill();
     stroke(utility.white);
     ellipse(
-      utility.calculateWidth(this.compassX), 
-      utility.calculateHeight(this.compassY),
-      utility.calculateWidth(this.compassRadius),
-      utility.calculateHeight(this.compassRadius)
+      this.compassX, 
+      this.compassY,
+      this.compassDiameter,
+      this.compassDiameter
     );
 
   }
@@ -83,30 +87,28 @@ class Wind {
     );
   }
   
-  void setDirection(int degree) {
+  void setDirection(float degree) {
     float rads = radians(degree);
     strokeWeight(utility.calculateHeight(4));
     stroke(utility.grey);
     fill(utility.lightRed);
+    int x  = (int)(this.compassX + (this.compassDiameter/2) * cos(rads));
+    int y = (int)(this.compassY + (this.compassDiameter/2) * sin(rads));
     pushMatrix();
+      translate(
+        x,
+        y
+      );
       rotate(rads);
       triangle(
-        this.calculateDirectionX(rads, this.dirX_1),
-        this.calculateDirectionY(rads, this.dirY_1), 
-        this.calculateDirectionX(rads, this.dirX_2), 
-        this.calculateDirectionY(rads, this.dirY_2), 
-        this.calculateDirectionX(rads, this.dirX_3), 
-        this.calculateDirectionY(rads, this.dirY_3)
+        dirX_1,
+        dirY_1,
+        dirX_2,
+        dirY_2,
+        dirX_3,
+        dirY_3
       );
     popMatrix();
-  }
-  
-  int calculateDirectionX(float rads, i) {
-    return (int)(x + this.compassRadius * cos(rads));
-  }
-  
-  int calculateDirectionY(float rads, int y) {
-    return (int)(y + this.compassRadius * sin(rads));
   }
 
 }
