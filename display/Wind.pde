@@ -28,12 +28,12 @@ class Wind {
     this.compassY = utility.calculateHeight(951);
     this.compassDiameter = utility.calculateHeight(140);
     
-    this.dirX_1 = utility.calculateWidth(0);
-    this.dirY_1 = utility.calculateHeight(20);
-    this.dirX_2 = utility.calculateWidth(-14);
-    this.dirY_2 = utility.calculateHeight(-20); 
-    this.dirX_3 = utility.calculateWidth(14);
-    this.dirY_3 = utility.calculateHeight(-20);
+    this.dirX_1 = utility.calculateWidth(-20);
+    this.dirY_1 = utility.calculateHeight(0);
+    this.dirX_2 = utility.calculateWidth(20);
+    this.dirY_2 = utility.calculateHeight(-14); 
+    this.dirX_3 = utility.calculateWidth(20);
+    this.dirY_3 = utility.calculateHeight(14);
   }
 
   void init() {
@@ -88,7 +88,7 @@ class Wind {
   }
   
   void setDirection(float degree) {
-    float rads = radians(degree);
+    float rads = radians(degree-90);
     strokeWeight(utility.calculateHeight(4));
     stroke(utility.grey);
     fill(utility.lightRed);
