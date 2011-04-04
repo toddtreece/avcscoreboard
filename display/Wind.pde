@@ -17,12 +17,12 @@ class Wind {
   
   //current wind readings
   int windSpeed;
-  int windDirection; 
+  float windDirection; 
   
   Wind() {
     utility = new Utility();
     this.windSpeed = 0;
-    this.windDirection = 0;
+    this.windDirection = 0.0;
     
     this.compassX = utility.calculateWidth(164);
     this.compassY = utility.calculateHeight(951);
@@ -54,9 +54,36 @@ class Wind {
     );
 
   }
+
+  void setSpeed(int speed) {
+    this.windSpeed = speed;
+    textFont(
+      createFont(
+        "Arial-Black", 
+        utility.calculateHeight(55)
+      )
+    );
+    textAlign(CENTER);
+    fill(utility.white);
+    text(
+      speed,
+      utility.calculateWidth(166), 
+      utility.calculateHeight(968)
+    );
+    textFont(
+      createFont(
+        "Arial-Black", 
+        utility.calculateHeight(20)
+      )
+    );
+    text(
+      "MPH",
+      utility.calculateWidth(166), 
+      utility.calculateHeight(988)
+    );
+  }
   
   void createCompassDirections() {
-    //36px at 1080p
     textFont(
       createFont(
         "Arial-Black", 
@@ -88,9 +115,10 @@ class Wind {
   }
   
   void setDirection(float degree) {
+    this.windDirection = degree;
     float rads = radians(degree-90);
     strokeWeight(utility.calculateHeight(4));
-    stroke(utility.grey);
+    stroke(utility.white);
     fill(utility.lightRed);
     int x  = (int)(this.compassX + (this.compassDiameter/2) * cos(rads));
     int y = (int)(this.compassY + (this.compassDiameter/2) * sin(rads));

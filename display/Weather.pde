@@ -1,18 +1,18 @@
 class Weather {
   Wind wind;
-  float temperature;
-  float pressure;
-  float humidity;
+  Temperature temperature;
+  Pressure pressure;
+  Humidity humidity;
 
   Weather() {
-    this.temperature = 0.0;
-    this.pressure = 0.0;
-    this.humidity = 0.0;
+    this.pressure = new Pressure();
+    this.humidity = new Humidity();
+    this.temperature = new Temperature();
     this.wind = new Wind();
   }
   
   void init() {
     this.wind.init();
   }
- 
+  
 }

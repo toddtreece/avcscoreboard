@@ -11,6 +11,9 @@ void setup() {
 
 void draw() {
   scoreboard.reDraw();
-  scoreboard.weather.wind.setDirection(0);
-
+  scoreboard.weather.wind.setDirection(270);
+  scoreboard.weather.wind.setSpeed(0);
+  scoreboard.weather.temperature.setTemperature(90.0);
+  scoreboard.weather.humidity.setHumidity(33.3);
+  scoreboard.weather.pressure.setPressure(101.4);
 }

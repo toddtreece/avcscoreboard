@@ -1,6 +1,7 @@
 class Scoreboard {
   
   Weather weather;
+  Clock clock;
   PImage bg;
   
   Scoreboard(int w, int h) {
@@ -12,12 +13,13 @@ class Scoreboard {
     }
     
     this.weather = new Weather();
-    
+    this.clock = new Clock();
   }
   
   void reDraw() {
     background(this.bg);
     this.weather.init();
+    this.clock.update();
   }
 
 }
