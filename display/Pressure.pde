@@ -11,7 +11,7 @@ class Pressure {
   
   void setPressure(float p) {
     this.current = p;
-    String tempText = "Pressure: " + str(p) + " kPa";
+    String tempText = "Pressure: " + str(p) + " inHg";
     textFont(
       createFont(
         "Arial-Black", 

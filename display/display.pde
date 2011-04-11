@@ -1,19 +1,16 @@
 import fullscreen.*;
+import processing.serial.*;
+import de.bezier.data.sql.*;
 
-SoftFullScreen fs; 
 Scoreboard scoreboard;
+SoftFullScreen fs;
 
 void setup() {
-  scoreboard = new Scoreboard(1920/2, 1080/2);
+  scoreboard = new Scoreboard(this, 1920, 1080);
   fs = new SoftFullScreen(this);
-  //fs.enter();
+  fs.enter();
 }
 
 void draw() {
   scoreboard.reDraw();
-  scoreboard.weather.wind.setDirection(270);
-  scoreboard.weather.wind.setSpeed(0);
-  scoreboard.weather.temperature.setTemperature(90.0);
-  scoreboard.weather.humidity.setHumidity(33.3);
-  scoreboard.weather.pressure.setPressure(101.4);
 }

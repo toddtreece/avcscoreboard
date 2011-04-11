@@ -55,8 +55,9 @@ class Wind {
 
   }
 
-  void setSpeed(int speed) {
-    this.windSpeed = speed;
+  void setSpeed(float speed) {
+    speed *= 10.0; // fix until the USB weatherboard is calibrated
+    this.windSpeed = int(speed);
     textFont(
       createFont(
         "Arial-Black", 
@@ -66,7 +67,7 @@ class Wind {
     textAlign(CENTER);
     fill(utility.white);
     text(
-      speed,
+      this.windSpeed,
       utility.calculateWidth(166), 
       utility.calculateHeight(968)
     );
