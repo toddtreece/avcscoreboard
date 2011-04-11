@@ -24,6 +24,7 @@ class Scoreboard {
     background(this.bg);
     this.clock.update();
     this.weather.init();
+    this.standings.refresh();
   }
 
 }
