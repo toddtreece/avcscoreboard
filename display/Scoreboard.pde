@@ -1,10 +1,11 @@
 class Scoreboard {
   
   Weather weather;
+  View view;
   Clock clock;
   PImage bg;
   PApplet main;
-  Standings standings;
+  
   
   Scoreboard(PApplet p, int w, int h) {
     this.main = p;
@@ -16,7 +17,7 @@ class Scoreboard {
     }
     
     this.clock = new Clock();
-    this.standings = new Standings(this.main);
+    this.view = new View(this.main);
     this.weather = new Weather(this.main);
   }
   
@@ -24,7 +25,7 @@ class Scoreboard {
     background(this.bg);
     this.clock.update();
     this.weather.init();
-    this.standings.refresh();
+    this.view.refresh();
   }
 
 }

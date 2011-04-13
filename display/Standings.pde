@@ -4,15 +4,11 @@ class Standings {
   PApplet main;
   
   int botType = 2;
-  String user = "root";
-  String pass = "";
-  String database = "avc_development";
-  String host = "localhost";
   
   Standings(PApplet p) {
     this.main = p;
     this.utility = new Utility();
-    this.mysql = new MySQL(this.main, this.host, this.database, this.user, this.pass);
+    this.mysql = new MySQL(this.main, utility.db_host, utility.db_database, utility.db_user, utility.db_pass);
   } 
   
   void drawLabel() {
@@ -45,19 +41,21 @@ class Standings {
     popMatrix();
   }
   
-  void refresh() { 
+  void getStandings() { 
     this.drawLabel();
     if (this.mysql.connect()) {
       String query;
       query = "SELECT x.*, @rownum:=@rownum+1 AS rank ";
       query += "FROM ( ";
-      query += "SELECT b.name, l.lap_time, t.city, t.state, l.disqualified ";
+      query += "SELECT b.name, l.lap_time, t.city, t.state, l.disqualified, ";
+      query += "CalculateBonusTime(l.lap_time, l.bonus_landlot, l.bonus_landbox, l.bonus_takeoff, l.bonus_ring) as bonus_time ";
       query += "FROM laps l ";
-      query += "JOIN heats h ON h.id = l.heats_id ";
       query += "JOIN bots b ON b.id = l.bots_id ";
+      query += "JOIN heats h ON h.id = b.heats_id ";
       query += "JOIN teams t ON t.id = b.teams_id ";
       query += "WHERE h.bot_types_id = " + str(this.botType) + " ";
-      query += "ORDER BY l.disqualified ASC, l.corners_completed DESC, l.lap_time ASC ";
+      query += "ORDER BY l.disqualified ASC, l.corners_completed DESC, ";
+      query += "bonus_time ASC ";
       query += "LIMIT 0,4 ) x, (SELECT @rownum := 0) AS r";
       this.mysql.query(query);
       int x = 140;
@@ -91,7 +89,7 @@ class Standings {
     );
     tempText = this.mysql.getString("city") + ", " + this.mysql.getString("state");
     if(disqualified == 0) {
-      tempText += " (" + this.mysql.getString("lap_time").substring(3,8) + ")";
+      tempText += " (" + this.mysql.getString("bonus_time").substring(3,8) + ")";
     } else {
       tempText += " (DNF)";
     }
