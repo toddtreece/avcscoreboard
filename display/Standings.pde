@@ -43,12 +43,26 @@ class Standings {
   
   void getStandings() { 
     this.drawLabel();
-    if (this.mysql.connect()) {
+    if(this.mysql.connect()) {
       String query;
       query = "SELECT x.*, @rownum:=@rownum+1 AS rank ";
       query += "FROM ( ";
       query += "SELECT b.name, l.lap_time, t.city, t.state, l.disqualified, ";
-      query += "CalculateBonusTime(l.lap_time, l.bonus_landlot, l.bonus_landbox, l.bonus_takeoff, l.bonus_ring) as bonus_time ";
+      query += "SEC_TO_TIME( ";
+      query += "TIME_TO_SEC(l.lap_time) - ";
+      query += "( ";
+      query += "IF(l.bonus_landlot = 1, 10, 0) + ";
+      query += "IF(l.bonus_landbox = 1, 30, 0) + ";
+      query += "IF(l.bonus_takeoff = 1, 30, 0) + ";
+      query += "IF(l.bonus_ring = 1, 30, 0) ";
+      query += ") ";
+      query += ") as bonus_time, ";
+      query += "( ";
+      query += "l.bonus_landlot + ";
+      query += "l.bonus_landbox + ";
+      query += "l.bonus_takeoff + ";
+      query += "l.bonus_ring ";
+      query += ") as bonus_count " ;
       query += "FROM laps l ";
       query += "JOIN bots b ON b.id = l.bots_id ";
       query += "JOIN heats h ON h.id = b.heats_id ";

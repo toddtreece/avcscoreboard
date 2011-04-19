@@ -9,6 +9,9 @@ class View {
   
   int type;
   int type_id;
+  boolean dev;
+  PImage bg;
+ 
   
   View(PApplet p) {
     this.main = p;
@@ -23,17 +26,38 @@ class View {
     this.getType();
     switch(this.type) {
       case 1:
-        // team 
+        this.getBackground(false);
         break;
       case 2:
-        // heat
+        this.getBackground(false);
+        heat.getHeat(this.type_id);
         break;
       case 3:
+        this.getBackground(false);
         standings.getStandings();
         break;
+      case 4:
+        this.getBackground(true);
       default:
         break;
     }
+  }
+
+  void getBackground(boolean showWelcome) {
+    if(height == 1080) {
+      if(showWelcome) {
+        this.bg = loadImage("bg_welcome.png");
+      } else {
+        this.bg = loadImage("bg.png");
+      }
+    } else {
+      if(showWelcome) {
+        this.bg = loadImage("bg_welcome_dev.png");
+      } else {
+        this.bg = loadImage("bg_dev.png");
+      }
+    }
+    background(this.bg);    
   }
   
   void getType() {
