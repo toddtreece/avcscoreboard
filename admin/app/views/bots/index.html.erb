@@ -1,0 +1,48 @@
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first active"><%= link_to "#{t("web-app-theme.list", :default => "List")}", bots_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_bot_path %></li>
+    </ul>
+  </div>          
+  <div class="content">          
+    <h2 class="title"><%= t("web-app-theme.all", :default => "All")  %> Bots</h2>
+    <div class="inner">
+      <table class="table">
+        <tr>             
+          <th class="first">ID</th>
+                    <th>
+            <%= t("activerecord.attributes.bot.name", :default => t("activerecord.labels.name", :default => "Name")) %>
+          </th>
+                    <th><%= t("activerecord.attributes.bot.heats_id", :default => "Heat")  %></th>
+          <th class="last">&nbsp;</th>
+        </tr>
+        <% @bots.each do |bot| -%>
+        <tr class="<%= cycle("odd", "even") %>">
+          <td>
+            <%= bot.id %>
+          </td>
+                    <td>
+            <%= link_to bot.name, bot_path(bot) %>
+          </td>
+                    <td>
+            <%= bot.heats_id %>
+          </td>
+          <td class="last">
+            <%= link_to "#{t("web-app-theme.show", :default => "Show")}", bot_path(bot) %> |
+            <%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_bot_path(bot) %> |
+            <%= link_to "#{t("web-app-theme.delete", :default => "Delete")}", bot_path(bot), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+          </td>
+        </tr>          
+        <% end -%>
+      </table>
+      <div class="actions-bar wat-cf">
+        <div class="actions">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

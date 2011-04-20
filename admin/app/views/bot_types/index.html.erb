@@ -1,0 +1,48 @@
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first active"><%= link_to "#{t("web-app-theme.list", :default => "List")}", bot_types_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_bot_type_path %></li>
+    </ul>
+  </div>          
+  <div class="content">          
+    <h2 class="title"><%= t("web-app-theme.all", :default => "All")  %> BotTypes</h2>
+    <div class="inner">
+      <table class="table">
+        <tr>             
+          <th class="first">ID</th>
+                    <th>
+            <%= t("activerecord.attributes.bot_type.name", :default => t("activerecord.labels.name", :default => "Name")) %>
+          </th>
+                    <th><%= t("web-app-theme.created_at", :default => "Created at")  %></th>
+          <th class="last">&nbsp;</th>
+        </tr>
+        <% @bot_types.each do |bot_type| -%>
+        <tr class="<%= cycle("odd", "even") %>">
+          <td>
+            <%= bot_type.id %>
+          </td>
+                    <td>
+            <%= link_to bot_type.name, bot_type_path(bot_type) %>
+          </td>
+                    <td>
+            <%= bot_type.created_at %>
+          </td>
+          <td class="last">
+            <%= link_to "#{t("web-app-theme.show", :default => "Show")}", bot_type_path(bot_type) %> |
+            <%= link_to "#{t("web-app-theme.edit", :default => "Edit")}", edit_bot_type_path(bot_type) %> |
+            <%= link_to "#{t("web-app-theme.delete", :default => "Delete")}", bot_type_path(bot_type), :method => :delete, :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+          </td>
+        </tr>          
+        <% end -%>
+      </table>
+      <div class="actions-bar wat-cf">
+        <div class="actions">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

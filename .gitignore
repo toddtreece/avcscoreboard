@@ -1,2 +1,3 @@
-admin/log/**/*
+admin/log/development.log
+admin/mysql2/*
 *.swp

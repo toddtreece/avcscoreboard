@@ -1,0 +1,34 @@
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first"><%= link_to "#{t("web-app-theme.list", :default => "List")}", bots_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_bot_path %></li>
+      <li class="active"><%= link_to "#{t("web-app-theme.show", :default => "Show")}", bot_path %></li>
+    </ul>
+  </div>          
+  <div class="content">
+    <div class="inner">
+      
+        <p>
+          <b><%= t("activerecord.attributes.bot.name", :default => t("activerecord.labels.name", :default => "Name")) %>:</b>
+          <%= @bot.name %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.bot.teams_id", :default => t("activerecord.labels.teams_id", :default => "Teams")) %>:</b>
+          <%= @bot.teams_id %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.bot.heats_id", :default => t("activerecord.labels.heats_id", :default => "Heats")) %>:</b>
+          <%= @bot.heats_id %>
+        </p>
+      <div class="wat-cf">
+        <%= link_to image_tag("web-app-theme/icons/application_edit.png", :alt => "#{t("web-app-theme.edit", :default=> "Edit")}") + " " + t("web-app-theme.edit", :default=> "Edit"), edit_bot_path(@bot), :class => "button" %> 
+        <%= link_to image_tag("web-app-theme/icons/cross.png", :alt => "#{t("web-app-theme.delete", :default=> "Delete")}") + " " + t("web-app-theme.delete", :default => "Delete"), bot_path(@bot), :method => "delete", :class => "button", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+      </div>      
+    </div>
+  </div>
+</div>
+
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

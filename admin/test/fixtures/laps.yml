@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  bots_id: 1
+  heats_id: 1
+  lap_time: 2011-04-19 13:07:35
+  corners_completed: 1
+  disqualified: false
+  bonus_landbox: false
+  bonus_landlot: 1
+  bonus_takeoff: false
+  bonus_ring: false
+
+two:
+  bots_id: 1
+  heats_id: 1
+  lap_time: 2011-04-19 13:07:35
+  corners_completed: 1
+  disqualified: false
+  bonus_landbox: false
+  bonus_landlot: 1
+  bonus_takeoff: false
+  bonus_ring: false

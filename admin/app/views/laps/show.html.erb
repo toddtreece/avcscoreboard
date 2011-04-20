@@ -1,0 +1,64 @@
+<div class="block">
+  <div class="secondary-navigation">
+    <ul class="wat-cf">
+      <li class="first"><%= link_to "#{t("web-app-theme.list", :default => "List")}", laps_path  %></li>
+      <li><%= link_to "#{t("web-app-theme.new", :default => "New")}", new_lap_path %></li>
+      <li class="active"><%= link_to "#{t("web-app-theme.show", :default => "Show")}", lap_path %></li>
+    </ul>
+  </div>          
+  <div class="content">
+    <div class="inner">
+      
+        <p>
+          <b><%= t("activerecord.attributes.lap.bots_id", :default => t("activerecord.labels.bots_id", :default => "Bots")) %>:</b>
+          <%= @lap.bots_id %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.lap.heats_id", :default => t("activerecord.labels.heats_id", :default => "Heats")) %>:</b>
+          <%= @lap.heats_id %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.lap.lap_time", :default => t("activerecord.labels.lap_time", :default => "Lap time")) %>:</b>
+          <%= @lap.lap_time %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.lap.corners_completed", :default => t("activerecord.labels.corners_completed", :default => "Corners completed")) %>:</b>
+          <%= @lap.corners_completed %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.lap.disqualified", :default => t("activerecord.labels.disqualified", :default => "Disqualified")) %>:</b>
+          <%= @lap.disqualified %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.lap.bonus_landbox", :default => t("activerecord.labels.bonus_landbox", :default => "Bonus landbox")) %>:</b>
+          <%= @lap.bonus_landbox %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.lap.bonus_takeoff", :default => t("activerecord.labels.bonus_takeoff", :default => "Bonus takeoff")) %>:</b>
+          <%= @lap.bonus_takeoff %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.lap.bonus_ring", :default => t("activerecord.labels.bonus_ring", :default => "Bonus ring")) %>:</b>
+          <%= @lap.bonus_ring %>
+        </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.lap.bonus_landlot", :default => t("activerecord.labels.bonus_landlot", :default => "Bonus landlot")) %>:</b>
+          <%= @lap.bonus_landlot %>
+        </p>
+      <div class="wat-cf">
+        <%= link_to image_tag("web-app-theme/icons/application_edit.png", :alt => "#{t("web-app-theme.edit", :default=> "Edit")}") + " " + t("web-app-theme.edit", :default=> "Edit"), edit_lap_path(@lap), :class => "button" %> 
+        <%= link_to image_tag("web-app-theme/icons/cross.png", :alt => "#{t("web-app-theme.delete", :default=> "Delete")}") + " " + t("web-app-theme.delete", :default => "Delete"), lap_path(@lap), :method => "delete", :class => "button", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>
+      </div>      
+    </div>
+  </div>
+</div>
+
+<% content_for :sidebar, render(:partial => 'sidebar') -%>

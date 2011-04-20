@@ -1,0 +1,53 @@
+
+  <div class="group">
+    <%= f.label :bots_id, t("activerecord.attributes.lap.bots_id", :default => "Bot"), :class => :label %>
+    <%= f.select :bots_id, Bot.all.map { |bot| [bot.name, bot.id] } %>
+  </div>
+
+  <div class="group">
+    <%= f.label :heats_id, t("activerecord.attributes.lap.heats_id", :default => "Heat"), :class => :label %>
+    <%= f.select :heats_id, Heat.all.map { |heat| [heat.id, heat.id] } %>
+  </div>
+
+  <div class="group">
+    <%= f.label :lap_time, t("activerecord.attributes.lap.lap_time", :default => "Lap time"), :class => :label %>
+    <%= f.time_select :lap_time, :class => 'time_select' %>
+  </div>
+
+  <div class="group">
+    <%= f.label :corners_completed, t("activerecord.attributes.lap.corners_completed", :default => "Corners completed"), :class => :label %>
+    <%= f.select :corners_completed, [[4,4],[3,3],[2,2],[1,1]] %>
+  </div>
+
+  <div class="group">
+    <%= f.label :disqualified, t("activerecord.attributes.lap.disqualified", :default => "Disqualified"), :class => :label %>
+    <%= f.check_box :disqualified, :class => 'check_box' %>
+  </div>
+
+  <div class="group">
+    <%= f.label :bonus_landbox, t("activerecord.attributes.lap.bonus_landbox", :default => "Box Landing Bonus"), :class => :label %>
+    <%= f.check_box :bonus_landbox, :class => 'check_box' %>
+  </div>
+
+  <div class="group">
+    <%= f.label :bonus_takeoff, t("activerecord.attributes.lap.bonus_takeoff", :default => "Takeoff Bonus"), :class => :label %>
+    <%= f.check_box :bonus_takeoff, :class => 'check_box' %>
+  </div>
+
+  <div class="group">
+    <%= f.label :bonus_ring, t("activerecord.attributes.lap.bonus_ring", :default => "Ring Bonus"), :class => :label %>
+    <%= f.check_box :bonus_ring, :class => 'check_box' %>
+  </div>
+
+  <div class="group">
+    <%= f.label :bonus_landlot, t("activerecord.attributes.lap.bonus_landlot", :default => "Lot Landing Bonus"), :class => :label %>
+    <%= f.check_box :bonus_landlot, :class => 'check_box' %>
+  </div>
+        
+<div class="group navform wat-cf">
+  <button class="button" type="submit">
+    <%= image_tag("web-app-theme/icons/tick.png", :alt => "#{t("web-app-theme.save", :default => "Save")}") %> <%= t("web-app-theme.save", :default => "Save") %>
+  </button>
+  <span class="text_button_padding"><%= t("web-app-theme.or", :default => "or") %></span>
+	<%= link_to t("web-app-theme.cancel", :default => "Cancel"), laps_path, :class => "text_button_padding link_button" %>
+</div>

@@ -1,0 +1,2 @@
+module BotTypesHelper
+end
