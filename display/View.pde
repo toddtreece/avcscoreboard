@@ -65,7 +65,6 @@ class View {
       String query;
       query = "SELECT type, type_id ";
       query += "FROM views ";
-      query += "WHERE active = 1 ";
       query += "ORDER BY id DESC ";
       query += "LIMIT 1";
       this.mysql.query(query);
