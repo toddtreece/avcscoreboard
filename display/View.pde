@@ -63,7 +63,7 @@ class View {
   void getType() {
     if(this.mysql.connect()) {
       String query;
-      query = "SELECT display_type, type_id ";
+      query = "SELECT display_type, display_type_id ";
       query += "FROM views ";
       query += "ORDER BY id DESC ";
       query += "LIMIT 1";
