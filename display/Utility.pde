@@ -5,8 +5,8 @@ class Utility {
   color grey = #D0D2D3;
   color white = #FFFFFF;
   
-  String db_user = "root";
-  String db_pass = "";
+  String db_user = "avc";
+  String db_pass = "avc2011";
   String db_database = "avc_development";
   String db_host = "localhost";
   
