@@ -63,15 +63,15 @@ class View {
   void getType() {
     if(this.mysql.connect()) {
       String query;
-      query = "SELECT type, type_id ";
+      query = "SELECT display_type, type_id ";
       query += "FROM views ";
       query += "ORDER BY id DESC ";
       query += "LIMIT 1";
       this.mysql.query(query);
       this.mysql.next();
-      this.type = this.mysql.getInt("type");
+      this.type = this.mysql.getInt("display_type");
       if(this.type != 3) {
-        this.type_id = this.mysql.getInt("type_id");
+        this.type_id = this.mysql.getInt("display_type_id");
       } else {
         this.type_id = 0; 
       }
