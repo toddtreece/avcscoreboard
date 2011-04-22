@@ -14,6 +14,14 @@ class Team {
     this.drawLabel();
   }
   
+  int getBotType(int heat_id) {
+    String query;
+    query = "SELECT bot_types_id FROM heats WHERE id = " + heat_id;
+    this.mysql.query(query);
+    this.mysql.next();
+    return this.mysql.getInt("bot_types_id");
+  }
+  
   void drawLabel() {
     String labelText;
     labelText = "TEAM INFO";

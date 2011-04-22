@@ -10,14 +10,6 @@ class Heat {
     this.mysql = new MySQL(this.main, utility.db_host, utility.db_database, utility.db_user, utility.db_pass);
   }
   
-  int getBotType(int heat_id) {
-    String query;
-    query = "SELECT bot_types_id FROM heats WHERE id = " + heat_id;
-    this.mysql.query(query);
-    this.mysql.next();
-    return this.mysql.getInt("bot_types_id");
-  }
-
   void drawLabel() {
     String labelText;
     labelText = "UP NEXT";
@@ -47,37 +39,12 @@ class Heat {
     this.drawLabel();
     if(this.mysql.connect()) {
       String query = "";
-      query += "SELECT y.* ";
-      query += "FROM ( ";
-      query += "SELECT x.*, @rownum:=@rownum+1 AS rank ";
-      query += "FROM ( ";
-      query += "SELECT h.id as heat_id, b.id as bot_id, l.id as lap_id, b.pass, b.name, l.lap_time, t.city, t.state, l.disqualified, ";
-      query += "SEC_TO_TIME( ";
-      query += "TIME_TO_SEC(l.lap_time) - ";
-      query += "( ";
-      query += "IF(l.bonus_landlot = 1, 10, 0) + ";
-      query += "IF(l.bonus_landbox = 1, 30, 0) + ";
-      query += "IF(l.bonus_takeoff = 1, 30, 0) + ";
-      query += "IF(l.bonus_ring = 1, 30, 0) ";
-      query += ") ";
-      query += ") as bonus_time, ";
-      query += "( ";
-      query += "l.bonus_landlot + ";
-      query += "l.bonus_landbox + ";
-      query += "l.bonus_takeoff + ";
-      query += "l.bonus_ring ";
-      query += ") as bonus_count ";
-      query += "FROM laps l ";
-      query += "RIGHT JOIN bots b ON b.id = l.bots_id ";
-      query += "RIGHT JOIN heats h ON h.id = b.heats_id ";
-      query += "RIGHT JOIN teams t ON t.id = b.teams_id ";
-      query += "WHERE h.bot_types_id = " + this.getBotType(id) + " ";
-      query += "ORDER BY l.disqualified ASC, l.corners_completed DESC, ";
-      query += "bonus_time ASC ";
-      query += ") x, (SELECT @rownum := 0) AS r  ";
-      query += ") y ";
-      query += "WHERE heat_id = " + id + " ";
-      query += "ORDER BY `name` ASC, lap_id ASC ";
+      query += "SELECT h.id as heat_id, b.id as bot_id, b.pass, b.name, t.city, t.state ";
+      query += "FROM bots b ";
+      query += "JOIN heats h ON h.id = b.heats_id ";
+      query += "JOIN teams t ON t.id = b.teams_id ";
+      query += "WHERE h.id = " + id + " ";
+      query += "ORDER BY b.name ASC ";
       this.mysql.query(query);
       int x = 140;
       int y = 250;
@@ -86,7 +53,6 @@ class Heat {
         y = this.printRow(x,y,last);
         last = this.mysql.getInt("bot_id");
       }
-      
     }
   }
   
@@ -139,9 +105,6 @@ class Heat {
         ); 
       }
       y += 125;
-    }
-    if(this.mysql.getString("bonus_time") != null) {
-       
     }
     return y;
   }
