@@ -48,15 +48,13 @@ class Heat {
       this.mysql.query(query);
       int x = 140;
       int y = 250;
-      int last = 0;
       while (this.mysql.next()) {
-        y = this.printRow(x,y,last);
-        last = this.mysql.getInt("bot_id");
+        y = this.printRow(x,y);
       }
     }
   }
   
-  int printRow(int x, int y, int last) {
+  int printRow(int x, int y) {
     textFont(
       createFont(
         "Arial-Black", 
@@ -67,45 +65,44 @@ class Heat {
     fill(utility.white);
     String tempText;
     tempText = this.mysql.getString("name");
-    if(this.mysql.getInt("bot_id") != last) {
-      text(
-        tempText,
-        utility.calculateWidth(x), 
-        utility.calculateHeight(y)
-      );
-      float nameWidth = textWidth(tempText);
-      tempText = this.mysql.getString("city") + ", " + this.mysql.getString("state");
-      textFont(
-        createFont(
-          "Arial-Black", 
-          utility.calculateHeight(38)
-        )
-      );
-      text(
-        tempText,
+    text(
+      tempText,
+      utility.calculateWidth(x), 
+      utility.calculateHeight(y)
+    );
+    float nameWidth = textWidth(tempText);
+    tempText = this.mysql.getString("city") + ", " + this.mysql.getString("state");
+    textFont(
+      createFont(
+        "Arial-Black", 
+        utility.calculateHeight(38)
+      )
+    );
+    text(
+      tempText,
+      utility.calculateWidth(x),
+      utility.calculateHeight(y+42)
+    );
+    float cityWidth = textWidth(tempText);
+    if(this.mysql.getInt("pass") == 1) {
+      stroke(utility.darkRed);
+      strokeWeight(utility.calculateHeight(20));
+      line(
         utility.calculateWidth(x),
-        utility.calculateHeight(y+42)
+        (utility.calculateHeight(y) - utility.calculateHeight(25)),
+        (utility.calculateWidth(x) + nameWidth),
+        (utility.calculateHeight(y) - utility.calculateHeight(25))
       );
-      float cityWidth = textWidth(tempText);
-      if(this.mysql.getInt("pass") == 1) {
-        stroke(utility.darkRed);
-        strokeWeight(utility.calculateHeight(20));
-        line(
-          utility.calculateWidth(x),
-          (utility.calculateHeight(y) - utility.calculateHeight(25)),
-          (utility.calculateWidth(x) + nameWidth),
-          (utility.calculateHeight(y) - utility.calculateHeight(25))
-        );
-        strokeWeight(utility.calculateHeight(10));
-        line(
-          utility.calculateWidth(x),
-          (utility.calculateHeight(y+32)),
-          (utility.calculateWidth(x) + cityWidth),
-          (utility.calculateHeight(y+32))
-        ); 
-      }
-      y += 125;
+      strokeWeight(utility.calculateHeight(10));
+      line(
+        utility.calculateWidth(x),
+        (utility.calculateHeight(y+32)),
+        (utility.calculateWidth(x) + cityWidth),
+        (utility.calculateHeight(y+32))
+      ); 
     }
+    y += 125;
+    
     return y;
   }
   
