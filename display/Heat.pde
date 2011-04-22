@@ -51,7 +51,7 @@ class Heat {
       query += "FROM ( ";
       query += "SELECT x.*, @rownum:=@rownum+1 AS rank ";
       query += "FROM ( ";
-      query += "SELECT h.id as heat_id, b.id as bot_id, l.id as lap_id, b.name, l.lap_time, t.city, t.state, l.disqualified, ";
+      query += "SELECT h.id as heat_id, b.id as bot_id, l.id as lap_id, b.pass, b.name, l.lap_time, t.city, t.state, l.disqualified, ";
       query += "SEC_TO_TIME( ";
       query += "TIME_TO_SEC(l.lap_time) - ";
       query += "( ";
@@ -94,7 +94,7 @@ class Heat {
     textFont(
       createFont(
         "Arial-Black", 
-        utility.calculateHeight(100)
+        utility.calculateHeight(75)
       )
     );
     textAlign(LEFT);
@@ -107,7 +107,38 @@ class Heat {
         utility.calculateWidth(x), 
         utility.calculateHeight(y)
       );
-      y += 85;
+      float nameWidth = textWidth(tempText);
+      tempText = this.mysql.getString("city") + ", " + this.mysql.getString("state");
+      textFont(
+        createFont(
+          "Arial-Black", 
+          utility.calculateHeight(38)
+        )
+      );
+      text(
+        tempText,
+        utility.calculateWidth(x),
+        utility.calculateHeight(y+42)
+      );
+      float cityWidth = textWidth(tempText);
+      if(this.mysql.getInt("pass") == 1) {
+        stroke(utility.darkRed);
+        strokeWeight(utility.calculateHeight(20));
+        line(
+          utility.calculateWidth(x),
+          (utility.calculateHeight(y) - utility.calculateHeight(25)),
+          (utility.calculateWidth(x) + nameWidth),
+          (utility.calculateHeight(y) - utility.calculateHeight(25))
+        );
+        strokeWeight(utility.calculateHeight(10));
+        line(
+          utility.calculateWidth(x),
+          (utility.calculateHeight(y+32)),
+          (utility.calculateWidth(x) + cityWidth),
+          (utility.calculateHeight(y+32))
+        ); 
+      }
+      y += 125;
     }
     if(this.mysql.getString("bonus_time") != null) {
        

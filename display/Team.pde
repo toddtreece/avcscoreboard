@@ -11,7 +11,32 @@ class Team {
   }
   
   void getTeam(int id) {
-    // mysql stuff here
+    this.drawLabel();
+  }
+  
+  void drawLabel() {
+    String labelText;
+    labelText = "TEAM INFO";
+    textFont(
+      createFont(
+        "Arial-Black", 
+        utility.calculateHeight(115)
+      )
+    );
+    textAlign(CENTER);
+    fill(utility.white);
+    pushMatrix();
+    translate(
+      utility.calculateWidth(1710),
+      utility.calculateHeight(475)
+    );
+    rotate(radians(90));
+    text(
+      labelText,
+      0, 
+      0
+    );
+    popMatrix();
   }
   
   void printRow() {
