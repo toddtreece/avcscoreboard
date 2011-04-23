@@ -75,13 +75,36 @@ class Standings {
       this.mysql.query(query);
       int x = 140;
       int y = 250;
+      int count = 0;
       while (this.mysql.next()) {
         this.printRow(x,y);
         y += 160;
+        count++;
+      }
+      if(count == 0) {
+        this.noRunsMessage(x,y);
       }
     } else {
       println("MySQL connection failed");
     }
+  }
+  
+  void noRunsMessage(int x, int y) {
+    textFont(
+      createFont(
+        "Arial-Black", 
+        utility.calculateHeight(70)
+      )
+    );
+    textAlign(LEFT);
+    fill(utility.white);
+    String tempText;
+    tempText = "No runs completed.";
+    text(
+      tempText,
+      utility.calculateWidth(x), 
+      utility.calculateHeight(y)
+    );
   }
   
   void printRow(int x, int y) {
