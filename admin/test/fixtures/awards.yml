@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  teams_id: 1
+  award: 1
+  judge: MyString
+
+two:
+  teams_id: 1
+  award: 1
+  judge: MyString

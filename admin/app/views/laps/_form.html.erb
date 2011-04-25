@@ -5,13 +5,8 @@
   </div>
 
   <div class="group">
-    <%= f.label :heats_id, t("activerecord.attributes.lap.heats_id", :default => "Heat"), :class => :label %>
-    <%= f.select :heats_id, Heat.all.map { |heat| [heat.id, heat.id] } %>
-  </div>
-
-  <div class="group">
     <%= f.label :lap_time, t("activerecord.attributes.lap.lap_time", :default => "Lap time"), :class => :label %>
-    <%= f.time_select :lap_time, :class => 'time_select' %>
+    <%= f.text_field :lap_time, :class => 'text_field' %>
   </div>
 
   <div class="group">

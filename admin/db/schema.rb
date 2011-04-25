@@ -10,7 +10,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110419232451) do
+ActiveRecord::Schema.define(:version => 20110421225346) do
+
+  create_table "awards", :force => true do |t|
+    t.integer  "teams_id"
+    t.integer  "award"
+    t.string   "judge"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "bot_types", :force => true do |t|
     t.string   "name"
@@ -24,6 +32,7 @@ ActiveRecord::Schema.define(:version => 20110419232451) do
     t.integer  "heats_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "pass"
   end
 
   create_table "heats", :force => true do |t|
@@ -34,7 +43,6 @@ ActiveRecord::Schema.define(:version => 20110419232451) do
 
   create_table "laps", :force => true do |t|
     t.integer  "bots_id"
-    t.integer  "heats_id"
     t.time     "lap_time"
     t.integer  "corners_completed"
     t.boolean  "disqualified"

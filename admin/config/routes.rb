@@ -1,4 +1,6 @@
 Admin::Application.routes.draw do
+  resources :awards
+
   resources :views
 
   resources :teams

@@ -23,6 +23,11 @@
           <b><%= t("activerecord.attributes.bot.heats_id", :default => t("activerecord.labels.heats_id", :default => "Heats")) %>:</b>
           <%= @bot.heats_id %>
         </p>
+
+        <p>
+          <b><%= t("activerecord.attributes.bot.pass", :default => t("activerecord.labels.pass", :default => "Pass")) %>:</b>
+          <%= @bot.pass %>
+        </p>
       <div class="wat-cf">
         <%= link_to image_tag("web-app-theme/icons/application_edit.png", :alt => "#{t("web-app-theme.edit", :default=> "Edit")}") + " " + t("web-app-theme.edit", :default=> "Edit"), edit_bot_path(@bot), :class => "button" %> 
         <%= link_to image_tag("web-app-theme/icons/cross.png", :alt => "#{t("web-app-theme.delete", :default=> "Delete")}") + " " + t("web-app-theme.delete", :default => "Delete"), bot_path(@bot), :method => "delete", :class => "button", :confirm => "#{t("web-app-theme.confirm", :default => "Are you sure?")}" %>

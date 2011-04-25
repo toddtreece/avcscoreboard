@@ -13,6 +13,11 @@
     <%= f.label :heats_id, t("activerecord.attributes.bot.heats_id", :default => "Heat"), :class => :label %>
     <%= f.select :heats_id, Heat.all.map { |heat| [heat.id, heat.id] } %>
   </div>
+
+  <div class="group">
+    <%= f.label :pass, t("activerecord.attributes.bot.pass", :default => "Pass"), :class => :label %>
+    <%= f.check_box :pass, :class => 'check_box' %>
+  </div>  
         
 <div class="group navform wat-cf">
   <button class="button" type="submit">
