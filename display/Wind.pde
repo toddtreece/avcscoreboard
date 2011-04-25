@@ -56,7 +56,6 @@ class Wind {
   }
 
   void setSpeed(float speed) {
-    speed *= 10.0; // fix until the USB weatherboard is calibrated
     this.windSpeed = int(speed);
     textFont(
       createFont(

@@ -3,7 +3,7 @@ class Standings {
   MySQL mysql;
   PApplet main;
   
-  int botType = 2;
+  int botType;
   
   Standings(PApplet p) {
     this.main = p;
@@ -13,7 +13,7 @@ class Standings {
   
   void drawLabel() {
     String labelText;
-    if(this.botType == 1) {
+    if(this.botType == 0) {
       labelText = "AERIAL";
     } else {
       labelText = "GROUND";
@@ -41,7 +41,8 @@ class Standings {
     popMatrix();
   }
   
-  void getStandings() { 
+  void getStandings(int type) {
+    this.botType = type; 
     this.drawLabel();
     if(this.mysql.connect()) {
       String query;
@@ -53,7 +54,7 @@ class Standings {
       query += "( ";
       query += "IF(l.bonus_landlot = 1, 10, 0) + ";
       query += "IF(l.bonus_landbox = 1, 30, 0) + ";
-      query += "IF(l.bonus_takeoff = 1, 30, 0) + ";
+      query += "IF(l.bonus_takeoff = 1, 10, 0) + ";
       query += "IF(l.bonus_ring = 1, 30, 0) ";
       query += ") ";
       query += ") as bonus_time, ";
@@ -67,20 +68,43 @@ class Standings {
       query += "JOIN bots b ON b.id = l.bots_id ";
       query += "JOIN heats h ON h.id = b.heats_id ";
       query += "JOIN teams t ON t.id = b.teams_id ";
-      query += "WHERE h.bot_types_id = " + str(this.botType) + " ";
+      query += "WHERE h.bot_types_id = " + str(this.botType + 1) + " ";
       query += "ORDER BY l.disqualified ASC, l.corners_completed DESC, ";
       query += "bonus_time ASC ";
       query += "LIMIT 0,4 ) x, (SELECT @rownum := 0) AS r";
       this.mysql.query(query);
       int x = 140;
       int y = 250;
+      int count = 0;
       while (this.mysql.next()) {
         this.printRow(x,y);
         y += 160;
+        count++;
+      }
+      if(count == 0) {
+        this.noRunsMessage(x,y);
       }
     } else {
       println("MySQL connection failed");
     }
+  }
+  
+  void noRunsMessage(int x, int y) {
+    textFont(
+      createFont(
+        "Arial-Black", 
+        utility.calculateHeight(70)
+      )
+    );
+    textAlign(LEFT);
+    fill(utility.white);
+    String tempText;
+    tempText = "No runs completed.";
+    text(
+      tempText,
+      utility.calculateWidth(x), 
+      utility.calculateHeight(y)
+    );
   }
   
   void printRow(int x, int y) {
@@ -103,7 +127,12 @@ class Standings {
     );
     tempText = this.mysql.getString("city") + ", " + this.mysql.getString("state");
     if(disqualified == 0) {
-      tempText += " (" + this.mysql.getString("bonus_time").substring(3,8) + ")";
+      tempText += " (" + this.mysql.getString("bonus_time").substring(3,8);
+      if(this.mysql.getInt("bonus_count") > 0) {
+        tempText += "* w/ bonus)";
+      } else {
+        tempText += ")"; 
+      }
     } else {
       tempText += " (DNF)";
     }

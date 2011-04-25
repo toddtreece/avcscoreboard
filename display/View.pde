@@ -9,11 +9,14 @@ class View {
   
   int type;
   int type_id;
+  int standings_millis;
+  int standings_type = 0;
   boolean dev;
   PImage bg;
  
   
   View(PApplet p) {
+    this.standings_millis = millis();
     this.main = p;
     this.utility = new Utility();
     this.heat = new Heat(this.main);
@@ -27,17 +30,26 @@ class View {
     switch(this.type) {
       case 1:
         this.getBackground(false);
+        team.getTeam(this.type_id);
+        this.standings_millis = millis();
         break;
       case 2:
         this.getBackground(false);
         heat.getHeat(this.type_id);
+        this.standings_millis = millis();
         break;
       case 3:
         this.getBackground(false);
-        standings.getStandings();
+        if(standings_millis <= millis()) {
+          this.standings_type ^= 1;
+          this.standings_millis += 5000;
+        }
+        standings.getStandings(this.standings_type);
         break;
       case 4:
         this.getBackground(true);
+        this.standings_millis = millis();
+        break;
       default:
         break;
     }
